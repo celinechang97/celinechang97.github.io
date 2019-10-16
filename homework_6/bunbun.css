@@ -219,7 +219,8 @@ li a {
 }
 
 .product-column:hover .imagee {
-  opacity: 0.5;
+  transform: scale(1.05);
+  transition: transform 0.2s;
 }
 
 .product-column:hover .middle {
@@ -495,6 +496,10 @@ h2{
 	padding-top: 6px;
 	padding-bottom: 6px;
 	font-size: 30px;
+}
+
+.add-to-cart:hover{
+	cursor: pointer;
 }
 
 #selected{

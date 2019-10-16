@@ -1,9 +1,10 @@
 /* FOR IMAGE GALLERY ON DETAIL.HTML*/
 
-var slideIndex = 1;
-
 /*only call this function on the specific html !!!!!!!!! */
 //showSlides(slideIndex);
+// the above got fixed because I justed called the function onload for details.html
+
+var slideIndex = 1;
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
