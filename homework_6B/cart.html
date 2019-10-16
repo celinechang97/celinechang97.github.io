@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BunBun Bakery</title>
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bunbun.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+	<ul>
+		<li class="logo-name"><a href="index.html">bunbun <br> BAKERY</a></li>
+  		<li class="shopping-cart shopping-cart-html"><a href="cart.html"><i class="material-icons">shopping_cart</i><span>(<span id="cart-count">0</span>)</span></a></li>
+  		<li><a href="contact.html">CONTACT</a></li>
+  		<li><a href="dealshome.html">DEALS</a></li>
+  		<li><a href="browse.html">BUNS</a></li>
+	</ul>
+
+	<div class="container">
+		<p> Your Cart </p>
+
+		<div class="cart-row">
+			<div id = "cart" class="cart-column-1">
+				<div class="cart-row cart-heading">
+					<div class="heading-col item-col">Item</div>
+					<div class="heading-col item-col"></div>
+					<div class="heading-col">Item Price</div>
+					<div class="heading-col">Quantity</div>
+					<div class="heading-col">Total Price</div>
+					<div class="heading-col"></div>
+				</div>
+
+				<div id="cart-product" class="cart-row">
+					<div id="cart-item-image" class="cart-product-column"> <img class="imagee" src="blackberrybun.jpg" alt="blackberry bun"> </div>
+					<div id="cart-item-desc" class="cart-product-column"> Blackberry + None </div>
+					<div id="cart-item-price" class="cart-product-column">$3.50 </div>
+					<div id="cart-item-quantity" class="cart-product-column">1</div>
+					<div id="cart-item-total-price" class="cart-product-column"> $3.50</div>
+					<div id="cart-item-remove" class="cart-product-column">remove</div>
+				</div>
+
+			</div>
+
+			<div class="cart-column-2">
+				<div class="cart-row cart-heading">
+					Order Summary
+				</div>
+
+				<div class="cart-row">
+					<div class="checkout-column-1">
+						<div class="cart-row checkout-deets"> Subtotal </div>
+						<div class="cart-row checkout-deets">Shipping</div>
+						<div class="cart-row checkout-deets">Estimated Tax</div>
+						<div class="cart-row checkout-deets">TOTAL</div>
+					</div>
+					<div class="checkout-column-2">
+						<div class="cart-row checkout-deets"> $10.50 </div>
+						<div class="cart-row checkout-deets">$1.50</div>
+						<div class="cart-row checkout-deets">$0.00</div>
+						<div class="cart-row checkout-deets">$12.00</div>
+					</div>
+				</div>
+
+				<div class="cart-row checkout-button">
+					Proceed to Checkout
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="bunbun.js"></script>
+</body>
+</html>
