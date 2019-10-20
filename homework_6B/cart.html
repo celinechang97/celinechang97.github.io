@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body>
+<body onload="displayCartCount(), createCart()">
 	<ul>
 		<li class="logo-name"><a href="index.html">bunbun <br> BAKERY</a></li>
   		<li class="shopping-cart shopping-cart-html"><a href="cart.html"><i class="material-icons">shopping_cart</i><span>(<span id="cart-count">0</span>)</span></a></li>
@@ -30,6 +30,7 @@
 					<div class="heading-col"></div>
 				</div>
 
+				<!-- WHAT THE SHOPPING CART SHOULD HAVE LOOKED LIKE
 				<div id="cart-product" class="cart-row">
 					<div id="cart-item-image" class="cart-product-column"> <img class="imagee" src="blackberrybun.jpg" alt="blackberry bun"> </div>
 					<div id="cart-item-desc" class="cart-product-column"> Blackberry + None </div>
@@ -38,6 +39,7 @@
 					<div id="cart-item-total-price" class="cart-product-column"> $3.50</div>
 					<div id="cart-item-remove" class="cart-product-column">remove</div>
 				</div>
+				-->
 
 			</div>
 
@@ -54,10 +56,10 @@
 						<div class="cart-row checkout-deets">TOTAL</div>
 					</div>
 					<div class="checkout-column-2">
-						<div class="cart-row checkout-deets"> $10.50 </div>
-						<div class="cart-row checkout-deets">$1.50</div>
+						<div id="subtotal" class="cart-row checkout-deets"> $0.00 </div>
 						<div class="cart-row checkout-deets">$0.00</div>
-						<div class="cart-row checkout-deets">$12.00</div>
+						<div id="tax" class="cart-row checkout-deets">$0.00</div>
+						<div id="total" class="cart-row checkout-deets">$0.00</div>
 					</div>
 				</div>
 
