@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="animated fadeIn">
 <head>
 	<title>BunBun Bakery</title>
 	<link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="bunbun.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="animate.css">
 </head>
 
 <body onload="displayCartCount()">
@@ -24,18 +25,18 @@
 			
 			<!-- FIRST COL -->
 			<div class="product-column">
-				<a href="detail.html"><img class="imagee" src="original.jpg" alt="original bun"></a>
+				<a href="detail_og.html"><img onclick="getTypeOfBun(0)" class="imagee" src="original.jpg" alt="original bun"></a>
 				<!--<div class="middle">
    			 		<div class="text"><a href="detail.html">Quick Shop</a></div>
    			 		<div class="text deets"><a href="detail.html">Details</a></div>
  				 </div>-->
-				<div id="thisis" class="title-bun">Original  <span class="price-bun">|  $3.00</span></div>
+				<div class="title-bun">Original  <span class="price-bun">|  $3.00</span></div>
 				<div class="description-bun">Our signature cinnamon bun filled with the perfect ratio ofcinnamon and sugar</div>
 			</div>
 			
 			<!-- SECOND COL -->
 			<div class="product-column">
-				<img class="imagee" src="blackberrybun.jpg" alt="blueberry bun">
+				<a href="detail_bb.html"><img onclick="getTypeOfBun(1)"" class="imagee" src="blackberrybun.jpg" alt="blueberry bun"></a>
 				<!--<div class="middle">
    			 		<div class="text"><a href="detail.html">Quick Shop</a></div>
    			 		<div class="text deets"><a href="detail.html">Details</a></div>
@@ -46,7 +47,7 @@
 
 			<!-- THIRD COL -->
 			<div class="product-column">
-				<img class="imagee" src="walnutbun.jpg" alt="walnut bun">
+				<a href="detail_walnut.html"><img onclick="getTypeOfBun(2)" class="imagee" src="walnutbun.jpg" alt="walnut bun"></a>
 				<!--<div class="middle">
    			 		<div class="text"><a href="detail.html">Quick Shop</a></div>
    			 		<div class="text deets"><a href="detail.html">Details</a></div>
@@ -62,7 +63,7 @@
 			<!-- FIRST COL -->
 			<div class="product-column">
 				<!--<img class="gf" src="gftag.svg">-->
-				<img class="imagee" src="originalgf.jpg" alt="original gf bun">
+				<a href="detail_oggf.html"><img onclick="getTypeOfBun(3)" class="imagee" src="originalgf.jpg" alt="original gf bun"></a>
 				<!--<div class="middle">
    			 		<div class="text"><a href="detail.html">Quick Shop</a></div>
    			 		<div class="text deets"><a href="detail.html">Details</a></div>
@@ -73,7 +74,7 @@
 
 			<!-- SECOND COL -->
 			<div class="product-column">
-				<img class="imagee" src="pumpkinbun.jpg" alt="pumpkin spice bun">
+				<a href="detail_pumpkin.html"><img onclick="getTypeOfBun(4)" class="imagee" src="pumpkinbun.jpg" alt="pumpkin spice bun"></a>
 				<!--<div class="middle">
    			 		<div class="text"><a href="detail.html">Quick Shop</a></div>
    			 		<div class="text deets"><a href="detail.html">Details</a></div>
@@ -84,7 +85,7 @@
 
 			<!-- THIRD COL -->
 			<div class="product-column">
-				<img class="imagee" src="pecanbun.jpg" alt="caramel pecan bun">
+				<a href="detail_pecan.html"><img onclick="getTypeOfBun(5)" class="imagee" src="pecanbun.jpg" alt="caramel pecan bun"></a>
 				<!--<div class="middle">
    			 		<div class="text"><a href="detail.html">Quick Shop</a></div>
    			 		<div class="text deets"><a href="detail.html">Details</a></div>

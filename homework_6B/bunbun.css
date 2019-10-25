@@ -71,11 +71,22 @@ li a {
 	
 }
 
+.changing{
+	border: 10px;
+}
+
+
+
 /* FOR HOMEPAGE.HTML */
 .row{
 	margin-bottom: -10px;
 }
 
+.row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
 
 
 .bun1 {
@@ -253,7 +264,7 @@ li a {
 }
 
 .description-bun{
-	font-size: 20px;
+	font-size: 16px;
 	color: #474747;
 	margin-bottom: 80px;
 }
@@ -334,6 +345,11 @@ p {
 	margin-top: -20px;
 }
 
+.main_pic{
+	width: 75%;
+	margin-left: 50px;
+}
+
 .detail-column{
 	float:left;
 	width: 50%;
@@ -344,29 +360,28 @@ p {
 }
 
 /* for image gallery*/
+.suggestions{
+	font-size: 40px;
+	margin-top: 40px;
+}
+
 .mySlides {display: none}
 
-
 .slideshow-container {
-  max-width: 600px;
-  position: relative;
+  max-width: 300px;
+  /*position: relative;*/
+  margin-top: 50px;
 }
 
 .cinbun{
 	width: 75%;
 	margin-left: 11%;
 	border-radius: 5px;
-
-}
-
-.smaller-pic{
-	margin-top: 30%;
 }
 
 .prev, .next {
   cursor: pointer;
-  position: fixed;
-  top: 450px;
+  top: 600px;
   width: auto;
   padding: 10px;
   margin-top: -22px;
@@ -379,7 +394,7 @@ p {
 }
 
 .next {
-	right: 700px;
+	right: 1000px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -388,6 +403,7 @@ p {
  	color: white;
 }
 
+/*
 .dots{
 	margin-left: 41%;
 }
@@ -401,6 +417,7 @@ p {
 	display: inline-block;
 	transition: background-color 0.3s ease;
 }
+*/
 
 .active, .dot:hover {
   background-color: #717171;
@@ -483,7 +500,7 @@ h2{
 }
 
 .addtocartSection{
-	margin-top: 90px;
+	margin-top: 50px;
 }
 
 .add-to-cart{
@@ -525,6 +542,12 @@ h2{
 
 
 
+/* FOR DEALS.HTML */
+#deals_message{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 400px;
+}
 
 
 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+<head>
+	<title>BunBun Bakery</title>
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bunbun.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="animate.css">
+</head>
+
+<!-- onload="showSlides()"" -->
+
+<body onload="displayCartCount(), displayTypeOfBun()">
+	<!-- NAV BAR -->
+	<ul>
+		<li class="logo-name"><a href="index.html">bunbun <br> BAKERY</a></li>
+  		<li class="shopping-cart"><a href="cart.html"><i class="material-icons">shopping_cart</i><span>(<span id="cart-count">0</span>)</span></a></li>
+  		<li><a href="contact.html">CONTACT</a></li>
+  		<li><a href="dealshome.html">DEALS</a></li>
+  		<li class="browse-html"><a href="browse.html">BUNS</a></li>
+	</ul>
+
+	<!-- CONTENT -->
+	<div class="container">
+		<p><a href="browse.html"> &lt; Back to Buns </a></p>
+
+		<!-- LEFT SIDE - IMAGE GALLERY-->
+		<div class="row">
+			<div class="detail-column">
+				<img class="main_pic" src="cinbun1.jpeg" alt="cinnamon buns">
+			</div>
+
+			<!-- RIGHT SIDE: DESCRIPTION -->
+			<div class="detail-column right-col">
+				<h1 id="type-of-bun"> Blackberry <span id="price-of-bun" class="price-bun"> $3.50 </span></h1>
+				<div class="rating"> 
+					<i class="material-icons">favorite</i>
+					<i class="material-icons">favorite</i>
+					<i class="material-icons">favorite</i>
+					<i class="material-icons">favorite</i>
+					<i class="material-icons">favorite_border</i>
+					
+					<span>4/5 rating</span>
+				</div>
+				<h3> Fresh blackberries studded cinnamon and sugar bun </h3>
+				
+				<div class="details-row">
+					<div class="details-col-1">
+						<h2> Quantity </h2>
+						<div class="bunnumgroup">
+							<div id="quant-1" onclick="forQuantity(1)" class="bunnum"> 1 </div>
+							<div id="quant-3" onclick="forQuantity(3)" class="bunnum"> 3 </div>
+						</div>
+						<div class="bunnumgroup">
+							<div id="quant-6" onclick="forQuantity(6)" class="bunnum"> 6 </div>
+							<div id="quant-12" onclick="forQuantity(12)" class="bunnum"> 12 </div>
+						</div>
+					</div>
+
+					<div class="details-col-2">
+						<h2> Glaze </h2>
+						<div class="bunglazeroup">
+							<div id="glaze-none" onclick="forGlaze(0)" class="glaze"> None </div>
+							<div id="glaze-sm" onclick="forGlaze(1)" class="glaze"> Sugar-Milk </div>
+						</div>
+						<div class="bunglazegroup">
+							<div id="glaze-vm" onclick="forGlaze(2)" class="glaze"> Vanilla-Milk</div>
+							<div id="glaze-dc" onclick="forGlaze(3)" class="glaze"> Double Chocolate </div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="addtocartSection">
+					<div id="errorMessage"> *Please make your selection</div>
+					<div id="add-button" onclick="addingtoCart()" class="add-to-cart"> Add to Cart </div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="row suggestions">
+			you may also like...
+		</div>
+
+		<div class="row slideshow-container">
+
+				<div class="mySlides">
+				  <img class="cinbun" src="blackberrybun.jpg" alt="blackberry cinbun">
+				</div>
+
+				<div class="mySlides">
+				  <img class="cinbun" src="walnutbun.jpg" alt="cinnamon buns">
+				</div>
+
+				<div class="mySlides">
+				  <img class="cinbun" src="originalgf.jpg" alt="blackberry cinbun">
+				</div>
+
+				<div class="mySlides">
+				  <img class="cinbun" src="pumpkinbun.jpg" alt="pumpkin cinbun">
+				</div>
+
+				<div class="mySlides">
+				  <img class="cinbun" src="pecanbun.jpg" alt="pecan cinbun">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<!--
+			<div class="dots">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			-->
+	</div>
+	<script src="bunbun.js"></script>
+</body>
+</html>
