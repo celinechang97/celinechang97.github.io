@@ -37,43 +37,45 @@ function showSlides(n) {
 
 
 /* GETTING THE TYPE OF BUN*/
-var typeOfBun = "";
+var thisIsType = "";
 
 function getTypeOfBun(ele){
   if (ele === 0){
-    typeOfBun = "Original";
-    localStorage.setItem("storedTypeOfBun", typeOfBun);
+    thisIsType = "Original";
+    localStorage.setItem("storedTypeOfBun", thisIsType);
   }
 
   else if (ele === 1){
-    typeOfBun = "Blackberry";
-    localStorage.setItem("storedTypeOfBun", typeOfBun);
+    thisIsType = "Blackberry";
+    localStorage.setItem("storedTypeOfBun", thisIsType);
   }
 
   else if (ele === 2){
-    typeOfBun = "Walnut";
-    localStorage.setItem("storedTypeOfBun", typeOfBun);
+    thisIsType = "Walnut";
+    localStorage.setItem("storedTypeOfBun", thisIsType);
   }
 
   else if (ele === 3){
-    typeOfBun = "Original - GF";
-    localStorage.setItem("storedTypeOfBun", typeOfBun);
+    thisIsType = "Original - GF";
+    localStorage.setItem("storedTypeOfBun", thisIsType);
   }
 
   else if (ele === 4){
-    typeOfBun = "Pumpkin Spice";
-    localStorage.setItem("storedTypeOfBun", typeOfBun);
+    thisIsType = "Pumpkin Spice";
+    localStorage.setItem("storedTypeOfBun", thisIsType);
   } 
 
   else if (ele === 5){
-    typeOfBun = "Caramel Pecan";
-    localStorage.setItem("storedTypeOfBun", typeOfBun);
+    thisIsType = "Caramel Pecan";
+    localStorage.setItem("storedTypeOfBun", thisIsType);
   }  
 }
 
+/*
 function displayTypeOfBun(){
   typeOfBun = localStorage.getItem("storedTypeOfBun");
 }
+*/
 
 /* FOR QUANTITY SELECTION INDICATION ON DETAILS.HTML*/
 /* AND */
@@ -205,15 +207,14 @@ function cartCount(){
 
 function cartCount(){
   count_int +=1;
-  count_int_serialized = JSON.stringify(count_int);
-  localStorage.setItem("storedCount", count_int_serialized);
+  localStorage.setItem("storedCount", JSON.stringify(count_int));
   displayCartCount();
 }
 
 
 function displayCartCount(){
-  count_int_deserialized = JSON.parse(localStorage.getItem("storedCount"));
-  document.getElementById("cart-count").innerHTML = count_int_deserialized;
+  count_int = JSON.parse(localStorage.getItem("storedCount"));
+  document.getElementById("cart-count").innerHTML = count_int;
 }
 
 
@@ -222,7 +223,8 @@ function displayCartCount(){
 
 /*ADDING TO CART*/
 
-function Item (name, price, quantity, totalPrice) {
+function Item (type, name, price, quantity, totalPrice) {
+  this.type = type;
   this.name = name;
   this.price = price;
   this.quantity = quantity;
@@ -233,8 +235,10 @@ function Item (name, price, quantity, totalPrice) {
 
 var errorMsg = document.getElementById("errorMessage");
 var cart = [];
-var cart_serialized = [];
-var cart_deserialized = [];
+//cart = JSON.parse(localStorage.getItem("storedCart"));;
+//localStorage.setItem("storedCart", JSON.stringify(cart));
+//var cart_serialized = [];
+//var cart_deserialized = [];
 var priceOfBun = 0;
 
 
@@ -242,6 +246,19 @@ function addItem(item){
   cart.push(item);
 }
 
+function updateCart(){
+  localStorage.setItem("storedCart", JSON.stringify(cart));
+}
+
+function getUpdatedCart(){
+  if (JSON.parse(localStorage.getItem("storedCart")) === null){
+    cart= [];
+  }
+
+  else { 
+    cart = JSON.parse(localStorage.getItem("storedCart"));
+  };
+}
 
 
 function addingtoCart(){
@@ -255,24 +272,25 @@ function addingtoCart(){
     errorMsg.setAttribute("id", "errorMessage")
     cartCount();
     addButton.innerHTML = "Added!";
-    
-    var item_name = typeOfBun + " + " + thisIsGlaze;
+    var the_type = localStorage.getItem("storedTypeOfBun");
 
-    if (typeOfBun === "Original"){
+    if (the_type === "Original"){
       priceOfBun = 3;
     }
-    else if (typeOfBun === "Blackberry" || typeOfBun === "Walnut" || typeOfBun === "Original - GF"){
+    else if (the_type === "Blackberry" || the_type === "Walnut" || the_type === "Original - GF"){
       priceOfBun = 3.5;
     }
-    else if (typeOfBun === "Pumpkin Spice" || typeOfBun === "Caramel Pecan"){
+    else if (the_type === "Pumpkin Spice" || the_type === "Caramel Pecan"){
       priceOfBun = 4;
     }
 
+    
+    var item_name = the_type + " + " + thisIsGlaze;
     var total_price = priceOfBun*thisIsQuantity;
-    var item = new Item(item_name, priceOfBun, thisIsQuantity, total_price);
+    var item = new Item(the_type, item_name, priceOfBun, thisIsQuantity, total_price);
+
     addItem(item);
-    cart_serialized = JSON.stringify(cart);
-    localStorage.setItem("storedCart", cart_serialized);
+    updateCart();
   }
 
 }
@@ -291,34 +309,33 @@ var parentDiv = document.getElementById("cart");
 var childDiv = "";
 var subtotal = 0;
 var tax = 0;
-var shipping = 3;
+var shipping = 0;
 var total = 0;
 var picture = "";
 
 function createCart(){
-  cart_deserialized = JSON.parse(localStorage.getItem("storedCart"));
-  typeOfBun = localStorage.getItem("storedTypeOfBun");
+  getUpdatedCart();
 
-  for (i=0; i<cart_deserialized.length; i++){
-   var current_item = cart_deserialized[i];
+  for (i=0; i<cart.length; i++){
+   var current_item = cart[i];
    subtotal += current_item.totalPrice;
 
-   if (typeOfBun === "Original"){
+   if (current_item.type === "Original"){
     picture = "original.jpg";
    }
-   else if (typeOfBun === "Blackberry"){
+   else if (current_item.type === "Blackberry"){
     picture = "blackberrybun.jpg";
    }
-   else if (typeOfBun === "Walnut"){
+   else if (current_item.type === "Walnut"){
     picture = "walnutbun.jpg";
    }
-   else if (typeOfBun === "Original - GF"){
+   else if (current_item.type === "Original - GF"){
     picture = "originalgf.jpg";
    }
-   else if (typeOfBun === "Pumpkin Spice"){
+   else if (current_item.type === "Pumpkin Spice"){
     picture = "pumpkinbun.jpg";
    }
-   else if (typeOfBun === "Caramel Pecan"){
+   else if (current_item.type === "Caramel Pecan"){
     picture = "pecanbun.jpg";
    }
    
@@ -336,6 +353,7 @@ function createCart(){
   parentDiv.innerHTML += childDiv;
   
   tax = subtotal*0.1;
+  shipping = subtotal*0.05;
   total = subtotal + shipping + tax;
   document.getElementById("subtotal").innerHTML = "$" + subtotal.toFixed(2).toString();
   document.getElementById("shipping").innerHTML = "$" + shipping.toFixed(2).toString();
@@ -356,7 +374,8 @@ function confirmRemove(ele){
 
 
 function removeItem(ele){
-  for (i=0; i<cart_deserialized.length;i++){
+
+  for (i=0; i<cart.length;i++){
     if (i === ele){
       //REMOVING IT FROM SCREEN
       var stringi = i.toString();
@@ -366,25 +385,25 @@ function removeItem(ele){
 
 
       //CHANGING ORDER SUMMARY (COST)
-      var removingCost = cart_deserialized[i].totalPrice;
+      var removingCost = cart[i].totalPrice;
       subtotal -= removingCost;
       document.getElementById("subtotal").innerHTML = "$" + subtotal.toFixed(2).toString();
+      shipping = subtotal*0.05;
+      document.getElementById("shipping").innerHTML = "$" + shipping.toFixed(2).toString();
       tax = subtotal*0.1;
       document.getElementById("tax").innerHTML = "$" + tax.toFixed(2).toString();
       total = subtotal + shipping + tax;
       document.getElementById("total").innerHTML = "$" + total.toFixed(2).toString();
 
 
+
+
       //UPDATING LOCAL STORAGE
-      cart_deserialized.splice(i, 1);
-      count_int_deserialized-=1
-      count_int = count_int_deserialized
-      count_int_serialized = JSON.stringify(count_int);
-      localStorage.setItem("storedCount", count_int_serialized)
+      cart.splice(i, 1);
+      count_int-=1
+      localStorage.setItem("storedCount", JSON.stringify(count_int))
       displayCartCount();
-      cart = cart_deserialized;
-      cart_serialized = JSON.stringify(cart);
-      localStorage.setItem("storedCart", cart_serialized);
+      updateCart();
     }
   }
 }
