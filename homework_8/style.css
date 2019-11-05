@@ -1,0 +1,104 @@
+
+body {
+	background-color: #AEDDFF;
+	color: white;
+	line-height: 1.6;
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	animation-name: body_background;
+	animation-duration: 20s;
+	animation-delay: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;}
+
+@keyframes body_background {
+	0% {background-color: #AEDDFF;}
+	25% {background-color: #FFDFAE;}
+	50% {background-color: #AEFFF5;}
+	75% {background-color: #C8AEFF;}
+	100% {background-color: #AEDDFF;}
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+	padding: 0 30px;
+}
+
+#welcome {
+	height:300px;
+}
+
+#welcome h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 100px;
+	line-height: 2;
+	position: relative;
+	animation: heading;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+	0% {top: -200px;}
+	100% {top: 100px;}
+}
+
+#intro_yoga {
+	position: relative;
+	margin-top: 80px;
+	animation: intro_yoga;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes intro_yoga {
+	0% {bottom: -400px;}
+	100% {bottom: 10px;}
+}
+
+
+#flower {
+	width: 30px;
+	height: 30px;
+	animation: flower;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes flower {
+	100% {transform: rotateZ(360deg);}
+}
+
+.btn {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border: white 1px solid;
+	margin: 40px 5px 0px 5px;
+	opacity: 0;
+	animation-name: btn;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.btn:hover { 
+	border-radius: 0px 20px 0px 20px;
+	transition: 0.3s;
+}
+
+
+
+
+
+
+
