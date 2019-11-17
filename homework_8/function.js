@@ -1,8 +1,3 @@
-// var audio = new Audio('meditation.mp3');
-
-// window.onload= audio.play();
-
-
 /* FOR BACK TO TOP BUTTON*/
 
 //Get the button
@@ -14,7 +9,6 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   console.log("scroll");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    console.log("hi");
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -22,7 +16,25 @@ function scrollFunction() {
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+
+
+
+
+/* FOR SMOOTH SCROLL */
+$('.three_buttons a').on('click', function(e) {
+	if(this.hash !== ''){
+		e.preventDefault();
+
+		const hash = this.hash;
+
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top
+		}, 
+		800
+		);
+	}
+});
