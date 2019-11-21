@@ -1,0 +1,361 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Merriweather', serif;
+	background: #333;
+	color: #fff;
+	line-height: 1.6;
+	height: 100vh;
+}
+
+div#firstSection{
+	background-color: #806F78;
+	width: 100%;
+	height: 1000px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+div#secondSection{
+	background-color: #CCA09D;
+	width: 100%;
+	height: 1000px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+div#thirdSection{
+	background-color: #CCB19D;
+	width: 100%;
+	height: 1000px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+div#fourthSection{
+	background-color: #F3E0DF;
+	width: 100%;
+	height: 1050px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+hr{
+	border-width: 2px;
+	background-color: #3E1B18;
+	margin-top: 80px;
+}
+
+.roatedHR{
+	-webkit-transform:rotate(90deg);
+	margin-left: -1700px;
+}
+
+.title{
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+.centerGroup{
+	position: absolute;
+	left: 250px;
+	top: 450px;
+}
+
+.threeSections{
+	margin-right: 150px;
+	font-size: 20px;
+}
+
+.backgroundText{
+	opacity: 0.2;
+	overflow-y: hidden;
+	position: absolute;
+
+}
+
+/*#secondSection .backgroundText{
+	font-size: 250px;
+	transform: rotate(-90deg);
+	left: -700px;
+	top: 400px;
+}*/
+
+
+#secondSection .backgroundText{
+	font-size: 250px;
+	transform: rotate(-90deg);
+	left: -700px;
+	top: 200px;
+}
+
+@media screen and (max-width:768px) {
+  #secondSection .backgroundText {
+    font-size: 150px;
+  
+  }
+}
+
+#thirdSection .backgroundText{
+	opacity: 0.5;
+	font-size: 250px;
+	transform: rotate(0deg);
+	left: -40px;
+	top: 700px;
+}
+
+#fourthSection .backgroundText{
+	opacity: 0.3;
+	font-size: 300px;
+	transform: rotate(0deg);
+	left: -100px;
+	top: -150px;
+}
+
+.sectionHeading{
+	position: absolute;
+	font-size: 150px;
+}
+
+
+#secondSection .sectionHeading{
+	left: 30px;
+}
+
+@media screen and (max-width:992px) {
+  #secondSection .sectionHeading {
+    font-size: 90px;
+    left: 50px;
+    width: 45%;
+    line-height: 7rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #secondSection .sectionHeading {
+    font-size: 90px;
+    width: 45%;
+  }
+}
+
+#thirdSection .sectionHeading{
+	top: 500px;
+	left: 100px;
+	width: 50%;
+	line-height: 8rem;
+}
+
+#fourthSection .sectionHeading{
+	top: 100px;
+	left: 100px;
+	width: 100%;
+	line-height: 8rem;
+}
+
+.sectionSubHeading{
+	position: absolute;
+	color: #3E1B18;
+	font-size: 40px;
+	left: 300px;
+	top: 250px;
+}
+
+@media screen and (max-width:992px) {
+  .sectionSubHeading {
+    font-size: 40px;
+    left: 50px;
+    top: 250px;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .sectionSubHeading {
+    font-size: 50px;
+    left: 30px;
+    top: 300px;
+    width: 45%;
+
+  }
+}
+
+.sectionDescription{
+	position: absolute;
+	font-size: 20px;
+}
+
+#secondSection .sectionDescription{
+	left: 300px;
+	top: 400px;
+	width: 30%;
+	height: 100%;
+}
+
+@media screen and (max-width:992px) {
+  #secondSection .sectionDescription {
+    width: 40%;
+    left: 50px;
+    top: 350px;
+    font-size: 18px;
+
+  }
+}
+
+@media screen and (max-width:960px) {
+  #secondSection .sectionDescription {
+    width: 40%;
+    left: 50px;
+    top: 350px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width:908px) {
+  #secondSection .sectionDescription {
+    width: 40%;
+    left: 50px;
+    top: 350px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #secondSection .sectionDescription {
+    width: 45%;
+    left: 30px;
+    top: 300px;
+    font-size: 15px;
+  }
+}
+
+#thirdSection .sectionDescription{
+	left: 100px;
+	top: 100px;
+	width: 30%;
+	line-height: 3rem;
+	background-color: #333;
+	padding: 2rem 2rem;
+	text-align: center;
+	opacity: 0.8;
+}
+
+#thirdSection #rightDescription.sectionDescription{
+	left: 1200px;
+	top: 500px;
+}
+
+#firstSection .sectionImage{
+	position: absolute;
+	top: 150px;
+	left: 1000px;
+	width: 50%;
+	height: 700px;
+	overflow-y: hidden;
+}
+
+#firstSection .sectionImage#flower1{
+	position: absolute;
+	left:-120px;
+	top: -300px;
+	width: 30%;
+	overflow-y: hidden;
+	z-index: 1;
+}
+
+#secondSection .sectionImage{
+	float: right;
+	width: 50%;
+	height: 1300px;
+	overflow-y: hidden;
+}
+
+
+
+#thirdSection .sectionImage{
+	width: 100%;
+	height: 1000px;
+	overflow-y: hidden;
+	filter: brightness(90%);
+}
+
+.yogaIcons{
+
+}
+
+.yogaName{
+	color: #3E1B18;
+	font-size: 40px;
+}
+
+.yogaGroup{
+	position: absolute;
+	top: 400px;
+	left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BEFORE TRYING TO TUTOTRIAL*/
+/*body{
+	font-family: 'Merriweather', serif;
+}
+
+
+.firstSection{
+	background-color: #806F78;	
+}
+
+.blob{
+	padding-top: 30rem;
+	padding-left: 15rem;
+}
+
+h1{
+	font-size: 55px;
+}
+
+.threeButtons{
+	margin-top: 50px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.coverPhoto{
+	width: 100%;
+	height: auto;
+}
+
+.flower1{
+	width: 100%;
+}
+
+
+
+
+.secondSection{
+	background-color: #CCA09D;	
+}
+
+.ashtanga_pic{
+	width: 100%;
+}*/
