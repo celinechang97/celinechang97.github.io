@@ -46,63 +46,6 @@ body{
 	font-size: 70px;
 }
 
-div#fourthSection{
-	background-color: #F3E0DF;
-	width: 100%;
-	height: 1050px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-}
-
-#fourthSection .backgroundText{
-	opacity: 0.3;
-	font-size: 300px;
-	transform: rotate(0deg);
-	left: -100px;
-	top: -150px;
-	opacity: 0.2;
-	overflow-y: hidden;
-	position: absolute;
-}
-
-#fourthSection .sectionHeading{
-	top: 100px;
-	left: 100px;
-	width: 100%;
-	line-height: 8rem;
-}
-
-.yogaIcons{
-
-}
-
-.yogaName{
-	color: #3E1B18;
-	font-size: 40px;
-}
-
-.yogaGroup{
-	position: absolute;
-	top: 400px;
-	left: 100px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -166,6 +109,7 @@ hr{
 	font-size: 15px;
 }
 
+
 div#secondSection{
 	background-color: #CCA09D;
 	width: 100%;
@@ -183,6 +127,9 @@ div#secondSection{
 	width: 100%;
 	height: 250px;
 	overflow-y: hidden;
+	background: url('photos/ashtanga.jpeg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #secondSection .sectionHeading{
@@ -235,8 +182,12 @@ div#thirdSection{
 #thirdSection .sectionImage{
 	width: 100%;
 	height: 1100px;
+	overflow-x: hidden;
 	overflow-y: hidden;
 	filter: brightness(90%);
+	background: url('photos/flower2.jpeg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #thirdSection .sectionDescription{
@@ -257,6 +208,66 @@ div#thirdSection{
 	top: 660px;
 }
 
+
+div#fourthSection{
+	background-color: #F3E0DF;
+	width: 100%;
+	height: 1050px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+#fourthSection .backgroundText{
+	display: none;
+	font-size: 200px;
+	position: absolute;
+	left: -100px;
+	top: -50px;
+	opacity: 0.8;
+	overflow-y: hidden;
+}
+
+#fourthSection .sectionHeading{
+	position: absolute;
+	font-size: 70px;
+	line-height: 5rem;
+	left: 30px;
+	top: 30px;
+}
+
+.scrolling-wrapper {
+	margin-top: 200px;
+  	overflow-x: scroll;
+  	overflow-y: hidden;
+  	white-space: nowrap;
+}
+
+.card {
+   display: inline-block;  
+   background: none;
+   border-style: none;
+   margin: 4rem 8rem 0 3rem;
+   padding-bottom: 5rem;
+   text-align: center;
+}
+
+.yogaIcons{
+
+}
+
+.yogaName{
+	color: #3E1B18;
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+.yogaNameEng{
+	color: #3E1B18;
+	font-size: 20px;
+}
+
+
 div#quoteOne{
 	background-color: #3F3F3F;
 	text-align: center;
@@ -265,6 +276,8 @@ div#quoteOne{
 	width: 100%;
 	height: 300px;
 }
+
+
 
 
 
@@ -328,6 +341,7 @@ div#quoteOne{
 		font-size: 15px;
 	}
 
+
 	div#secondSection{
 	background-color: #CCA09D;
 	width: 100%;
@@ -371,8 +385,6 @@ div#quoteOne{
 	}
 
 
-
-
 	div#thirdSection{
 	background-color: #CCB19D;
 	width: 100%;
@@ -400,6 +412,7 @@ div#quoteOne{
 		height: 1300px;
 		overflow-y: hidden;
 		filter: brightness(90%);
+
 	}
 
 	#thirdSection .sectionDescription{
@@ -417,6 +430,64 @@ div#quoteOne{
 		left: 5%;
 		top: 800px;
 	}
+
+
+	div#fourthSection{
+	background-color: #F3E0DF;
+	width: 100%;
+	height: 1050px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#fourthSection .backgroundText{
+		font-size: 200px;
+		position: absolute;
+		left: -100px;
+		top: -50px;
+		opacity: 0.2;
+		overflow-y: hidden;
+	}
+
+	#fourthSection .sectionHeading{
+		position: absolute;
+		font-size: 100px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
+	.scrolling-wrapper {
+		margin-top: 250px;
+	  	overflow-x: scroll;
+	  	overflow-y: hidden;
+	  	white-space: nowrap;
+	}
+
+	.card {
+	display: inline-block;  
+	background:none;
+	border-style: none;
+	margin: 4rem 8rem 0 3rem;
+	text-align: center;
+	}
+
+	.yogaIcons{
+
+	}
+
+	.yogaName{
+		color: #3E1B18;
+		font-size: 30px;
+		margin-top: 30px;
+	}
+
+	.yogaNameEng{
+		color: #3E1B18;
+		font-size: 20px;
+	}
+
 
 	div#quoteOne{
 	background-color: #3F3F3F;
@@ -492,6 +563,7 @@ div#quoteOne{
 		font-size: 15px;
 	}
 
+
 	div#secondSection{
 	background-color: #CCA09D;
 	width: 100%;
@@ -533,8 +605,6 @@ div#quoteOne{
 	    top: 450px;
 	    font-size: 20px;
 	}
-
-
 
 
 	div#thirdSection{
@@ -580,6 +650,64 @@ div#quoteOne{
 	#thirdSection #rightDescription.sectionDescription{
 		left: 5%;
 		top: 700px;
+	}
+
+
+	div#fourthSection{
+	background-color: #F3E0DF;
+	width: 100%;
+	height: 1050px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#fourthSection .backgroundText{
+		font-size: 200px;
+		position: absolute;
+		left: -100px;
+		top: -50px;
+		opacity: 0.2;
+		overflow-y: hidden;
+	}
+
+	#fourthSection .sectionHeading{
+		position: absolute;
+		font-size: 120px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
+	.scrolling-wrapper {
+		margin-top: 250px;
+	  	overflow-x: scroll;
+	  	overflow-y: hidden;
+	  	white-space: nowrap;
+	}
+
+	.card {
+	display: inline-block;  
+	background:none;
+	border-style: none;
+	margin: 4rem 5.5rem 0 3rem;
+	text-align: center;
+	}
+
+
+	.yogaIcons{
+
+	}
+
+	.yogaName{
+		color: #3E1B18;
+		font-size: 30px;
+		margin-top: 30px;
+	}
+
+	.yogaNameEng{
+		color: #3E1B18;
+		font-size: 20px;
 	}
 
 }
@@ -884,6 +1012,7 @@ div#quoteOne{
 		font-size: 15px;
 	}
 
+
 	div#secondSection{
 	background-color: #CCA09D;
 	width: 100%;
@@ -925,7 +1054,6 @@ div#quoteOne{
 	    top: 450px;
 	    font-size: 20px;
 	}
-
 
 
 	div#thirdSection{
@@ -972,6 +1100,16 @@ div#quoteOne{
 		left: 5%;
 		top: 700px;
 	}
+
+
+	#fourthSection .sectionHeading{
+		position: absolute;
+		font-size: 150px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
 
 	div#quoteOne{
 	background-color: #3F3F3F;
@@ -1181,7 +1319,7 @@ div#quoteOne{
 	}
 
 	#thirdSection .sectionHeading{
-		top: 700px;
+		top: 550px;
 		left: 100px;
 		width: 50%;
 		line-height: 8rem;
@@ -1201,13 +1339,32 @@ div#quoteOne{
 		line-height: 1.5rem;
 		background-color: #333;
 		padding: 2rem 2rem;
-		text-align: left;
+		text-align: center;
 		opacity: 0.8;
 	}
 
 	#thirdSection #rightDescription.sectionDescription{
 		left: 750px;
 		top: 500px;
+	}
+
+
+	#fourthSection .sectionHeading{
+		position: absolute;
+		font-size: 150px;
+		line-height: 8rem;
+		left: 30px;
+		top: 50px;
+	}
+
+	#fourthSection .backgroundText{
+		display: block;
+		font-size: 300px;
+		position: absolute;
+		left: -100px;
+		top: -200px;
+		opacity: 0.2;
+		overflow-y: hidden;
 	}
 }
 
@@ -1385,7 +1542,7 @@ div#quoteOne{
 	}
 
 	#thirdSection .sectionHeading{
-		top: 700px;
+		top: 500px;
 		left: 100px;
 		width: 50%;
 		line-height: 8rem;
@@ -1405,7 +1562,7 @@ div#quoteOne{
 		line-height: 1.5rem;
 		background-color: #333;
 		padding: 2rem 2rem;
-		text-align: left;
+		text-align: center;
 		opacity: 0.8;
 	}
 
