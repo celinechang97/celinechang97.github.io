@@ -3,6 +3,20 @@
 	padding: 0;
 }
 
+a{
+	color:white;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover{
+	color: #5A3448;
+}
+
+
+
 body{
 	font-family: 'Merriweather', serif;
 	background: #333;
@@ -11,31 +25,25 @@ body{
 	height: 100vh;
 }
 
-div#firstSection{
-	background-color: #806F78;
-	width: 100%;
-	height: 1000px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+
+#top_btn{
+	display: none;
+  	position: fixed;
+  	bottom: 50px;
+  	right: 50px;
+  	z-index: 99;
+  	font-size: 18px;
+  	border: none;
+  	outline: none;
+  	background-color: #383838;
+  	color: white;
+  	cursor: pointer;
+  	padding: 0px 3px;
+  	border-radius: 50px;
 }
 
-div#secondSection{
-	background-color: #CCA09D;
-	width: 100%;
-	height: 1000px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-}
-
-div#thirdSection{
-	background-color: #CCB19D;
-	width: 100%;
-	height: 1000px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+#arrow{
+	font-size: 70px;
 }
 
 div#fourthSection{
@@ -47,109 +55,15 @@ div#fourthSection{
 	position: relative;
 }
 
-hr{
-	border-width: 2px;
-	background-color: #3E1B18;
-	margin-top: 80px;
-}
-
-.roatedHR{
-	-webkit-transform:rotate(90deg);
-	margin-left: -1700px;
-}
-
-.title{
-	font-size: 50px;
-	margin-bottom: 50px;
-}
-
-.centerGroup{
-	position: absolute;
-	left: 250px;
-	top: 450px;
-}
-
-.threeSections{
-	margin-right: 150px;
-	font-size: 20px;
-}
-
-.backgroundText{
-	opacity: 0.2;
-	overflow-y: hidden;
-	position: absolute;
-
-}
-
-/*#secondSection .backgroundText{
-	font-size: 250px;
-	transform: rotate(-90deg);
-	left: -700px;
-	top: 400px;
-}*/
-
-
-#secondSection .backgroundText{
-	font-size: 250px;
-	transform: rotate(-90deg);
-	left: -700px;
-	top: 200px;
-}
-
-@media screen and (max-width:768px) {
-  #secondSection .backgroundText {
-    font-size: 150px;
-  
-  }
-}
-
-#thirdSection .backgroundText{
-	opacity: 0.5;
-	font-size: 250px;
-	transform: rotate(0deg);
-	left: -40px;
-	top: 700px;
-}
-
 #fourthSection .backgroundText{
 	opacity: 0.3;
 	font-size: 300px;
 	transform: rotate(0deg);
 	left: -100px;
 	top: -150px;
-}
-
-.sectionHeading{
+	opacity: 0.2;
+	overflow-y: hidden;
 	position: absolute;
-	font-size: 150px;
-}
-
-
-#secondSection .sectionHeading{
-	left: 30px;
-}
-
-@media screen and (max-width:992px) {
-  #secondSection .sectionHeading {
-    font-size: 90px;
-    left: 50px;
-    width: 45%;
-    line-height: 7rem;
-  }
-}
-
-@media screen and (max-width:768px) {
-  #secondSection .sectionHeading {
-    font-size: 90px;
-    width: 45%;
-  }
-}
-
-#thirdSection .sectionHeading{
-	top: 500px;
-	left: 100px;
-	width: 50%;
-	line-height: 8rem;
 }
 
 #fourthSection .sectionHeading{
@@ -157,132 +71,6 @@ hr{
 	left: 100px;
 	width: 100%;
 	line-height: 8rem;
-}
-
-.sectionSubHeading{
-	position: absolute;
-	color: #3E1B18;
-	font-size: 40px;
-	left: 300px;
-	top: 250px;
-}
-
-@media screen and (max-width:992px) {
-  .sectionSubHeading {
-    font-size: 40px;
-    left: 50px;
-    top: 250px;
-    width: 45%;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .sectionSubHeading {
-    font-size: 50px;
-    left: 30px;
-    top: 300px;
-    width: 45%;
-
-  }
-}
-
-.sectionDescription{
-	position: absolute;
-	font-size: 20px;
-}
-
-#secondSection .sectionDescription{
-	left: 300px;
-	top: 400px;
-	width: 30%;
-	height: 100%;
-}
-
-@media screen and (max-width:992px) {
-  #secondSection .sectionDescription {
-    width: 40%;
-    left: 50px;
-    top: 350px;
-    font-size: 18px;
-
-  }
-}
-
-@media screen and (max-width:960px) {
-  #secondSection .sectionDescription {
-    width: 40%;
-    left: 50px;
-    top: 350px;
-    font-size: 17px;
-  }
-}
-
-@media screen and (max-width:908px) {
-  #secondSection .sectionDescription {
-    width: 40%;
-    left: 50px;
-    top: 350px;
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width:768px) {
-  #secondSection .sectionDescription {
-    width: 45%;
-    left: 30px;
-    top: 300px;
-    font-size: 15px;
-  }
-}
-
-#thirdSection .sectionDescription{
-	left: 100px;
-	top: 100px;
-	width: 30%;
-	line-height: 3rem;
-	background-color: #333;
-	padding: 2rem 2rem;
-	text-align: center;
-	opacity: 0.8;
-}
-
-#thirdSection #rightDescription.sectionDescription{
-	left: 1200px;
-	top: 500px;
-}
-
-#firstSection .sectionImage{
-	position: absolute;
-	top: 150px;
-	left: 1000px;
-	width: 50%;
-	height: 700px;
-	overflow-y: hidden;
-}
-
-#firstSection .sectionImage#flower1{
-	position: absolute;
-	left:-120px;
-	top: -300px;
-	width: 30%;
-	overflow-y: hidden;
-	z-index: 1;
-}
-
-#secondSection .sectionImage{
-	float: right;
-	width: 50%;
-	height: 1300px;
-	overflow-y: hidden;
-}
-
-
-
-#thirdSection .sectionImage{
-	width: 100%;
-	height: 1000px;
-	overflow-y: hidden;
-	filter: brightness(90%);
 }
 
 .yogaIcons{
@@ -315,47 +103,1324 @@ hr{
 
 
 
-/*BEFORE TRYING TO TUTOTRIAL*/
-/*body{
-	font-family: 'Merriweather', serif;
+
+
+
+
+/* OG PHONE SIZE (375px) */
+
+div#firstSection{
+	background-color: #806F78;
+	width: 100%;
+	height: 800px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
 }
 
-
-.firstSection{
-	background-color: #806F78;	
+#firstSection .sectionImage{
+	display: none;
+	position: absolute;
+	top: 150px;
+	left: 1000px;
+	width: 50%;
+	height: 700px;
+	overflow-y: hidden;
 }
 
-.blob{
-	padding-top: 30rem;
-	padding-left: 15rem;
+#firstSection .sectionImage#flower1{
+	display: none;
+	position: absolute;
+	left:-120px;
+	top: -300px;
+	width: 30%;
+	overflow-y: hidden;
+	z-index: 1;
 }
 
-h1{
-	font-size: 55px;
+hr{
+	border-width: 2px;
+	background-color: #3E1B18;
+	margin-top: 80px;
 }
 
-.threeButtons{
-	margin-top: 50px;
+.roatedHR{
+	-webkit-transform:rotate(90deg);
+	margin-left: -250px;
+}
+
+.title{
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.centerGroup{
+	position: absolute;
+	left: 30px;
+	top: 500px;
+	width: 90%;
+}
+
+.threeSections{
+	margin-right: 30px;
+	font-size: 15px;
+}
+
+div#secondSection{
+	background-color: #CCA09D;
+	width: 100%;
+	height: 1400px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+#secondSection .backgroundText{
+	display: none;
+}
+
+#secondSection .sectionImage{
+	width: 100%;
+	height: 250px;
+	overflow-y: hidden;
+}
+
+#secondSection .sectionHeading{
+	position: absolute;
+	font-size: 60px;
+	line-height: 5rem;
+	left: 30px;
+	top: 30px;
+}
+
+#secondSection .sectionSubHeading{
+	position: absolute;
+	color: #3E1B18;
+	font-size: 30px;
+	left: 30px;
+	top: 280px;
+}
+
+#secondSection .sectionDescription {
+    position: absolute;
 	font-size: 20px;
+    width: 90%;
+    left: 30px;
+    top: 360px;
+}
+
+
+div#thirdSection{
+	background-color: #CCB19D;
+	width: 100%;
+	height: 1100px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+
+#thirdSection .backgroundText{
+	display: none;
+}
+
+#thirdSection .sectionHeading{
+	position: absolute;
+	font-size: 60px;
+	line-height: 5rem;
+	left: 30px;
+	top: 30px;
+}
+
+#thirdSection .sectionImage{
+	width: 100%;
+	height: 1100px;
+	overflow-y: hidden;
+	filter: brightness(90%);
+}
+
+#thirdSection .sectionDescription{
+	position: absolute;
+	font-size: 20px;
+	left: 5%;
+	top: 250px;
+	width: 90%;
+	line-height: 1.5rem;
+	background-color: #333;
+	padding: 2rem 2rem;
 	text-align: center;
+	opacity: 0.8;
 }
 
-.coverPhoto{
+#thirdSection #rightDescription.sectionDescription{
+	left: 5%;
+	top: 660px;
+}
+
+div#quoteOne{
+	background-color: #3F3F3F;
+	text-align: center;
+	padding: 5rem 2rem;
+	color: #FFF9F1;
 	width: 100%;
-	height: auto;
+	height: 300px;
 }
 
-.flower1{
+
+
+
+/* MIN WIDTH 500 */
+@media only screen and (min-width: 500px){
+	div#firstSection{
+	background-color: #806F78;
 	width: 100%;
-}
+	height: 800px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
 
+	#firstSection .sectionImage{
+		display: none;
+		position: absolute;
+		top: 250px;
+		left: 500px;
+		width: 100%;
+		height: 500px;
+		overflow-y: hidden;
+	}
 
+	#firstSection .sectionImage#flower1{
+		display: block;
+		position: absolute;
+		left:-100px;
+		top: -100px;
+		width: auto;
+		overflow-y: hidden;
+		z-index: 1;
+	}
 
+	hr{
+		border-width: 2px;
+		background-color: #3E1B18;
+		margin-top: 80px;
+	}
 
-.secondSection{
-	background-color: #CCA09D;	
-}
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -400px;
+	}
 
-.ashtanga_pic{
+	.centerGroup{
+		position: absolute;
+		left: 90px;
+		top: 500px;
+		width: 80%;
+	}
+
+	.title{
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+
+	.threeSections{
+		margin-right: 30px;
+		font-size: 15px;
+	}
+
+	div#secondSection{
+	background-color: #CCA09D;
 	width: 100%;
-}*/
+	height: 1200px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}	
+
+	#secondSection .backgroundText{
+	display: none;
+	}
+
+	#secondSection .sectionImage{
+		width: 100%;
+		height: 350px;
+		overflow-y: hidden;
+	}
+
+	#secondSection .sectionHeading{
+		position: absolute;
+		font-size: 100px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
+	#secondSection .sectionSubHeading{
+		position: absolute;
+		color: #3E1B18;
+		font-size: 40px;
+		left: 30px;
+		top: 380px;
+	}
+
+	#secondSection .sectionDescription {
+	    width: 90%;
+	    left: 30px;
+	    top: 450px;
+	    font-size: 20px;
+	}
+
+
+
+
+	div#thirdSection{
+	background-color: #CCB19D;
+	width: 100%;
+	height: 1300px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+
+	#thirdSection .backgroundText{
+		display: none;
+	}
+
+	#thirdSection .sectionHeading{
+		position: absolute;
+		font-size: 100px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
+	#thirdSection .sectionImage{
+		width: 100%;
+		height: 1300px;
+		overflow-y: hidden;
+		filter: brightness(90%);
+	}
+
+	#thirdSection .sectionDescription{
+		left: 5%;
+		top: 350px;
+		width: 90%;
+		line-height: 1.5rem;
+		background-color: #333;
+		padding: 2rem 2rem;
+		text-align: center;
+		opacity: 0.8;
+	}
+
+	#thirdSection #rightDescription.sectionDescription{
+		left: 5%;
+		top: 800px;
+	}
+
+	div#quoteOne{
+	background-color: #3F3F3F;
+	text-align: center;
+	padding: 5rem 2rem;
+	color: #FFF9F1;
+	width: 100%;
+	height: 300px;
+	font-size: 20px;
+	}
+
+}
+
+
+
+
+/* MIN WIDTH 700 */
+@media only screen and (min-width: 700px){
+	div#firstSection{
+	background-color: #806F78;
+	width: 100%;
+	height: 800px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#firstSection .sectionImage{
+		display: none;
+		position: absolute;
+		top: 250px;
+		left: 500px;
+		width: 100%;
+		height: 500px;
+		overflow-y: hidden;
+	}
+
+	#firstSection .sectionImage#flower1{
+		display: block;
+		position: absolute;
+		left:-100px;
+		top: -100px;
+		width: auto;
+		overflow-y: hidden;
+		z-index: 1;
+	}
+
+	hr{
+		border-width: 2px;
+		background-color: #3E1B18;
+		margin-top: 80px;
+	}
+
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -600px;
+	}
+
+	.centerGroup{
+		position: absolute;
+		left: 90px;
+		top: 500px;
+		width: 80%;
+	}
+
+	.title{
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+
+	.threeSections{
+		margin-right: 30px;
+		font-size: 15px;
+	}
+
+	div#secondSection{
+	background-color: #CCA09D;
+	width: 100%;
+	height: 1050px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}	
+
+	#secondSection .backgroundText{
+	display: none;
+	}
+
+	#secondSection .sectionImage{
+		width: 100%;
+		height: 350px;
+		overflow-y: hidden;
+	}
+
+	#secondSection .sectionHeading{
+		position: absolute;
+		font-size: 120px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
+	#secondSection .sectionSubHeading{
+		position: absolute;
+		color: #3E1B18;
+		font-size: 40px;
+		left: 30px;
+		top: 380px;
+	}
+
+	#secondSection .sectionDescription {
+	    width: 90%;
+	    left: 30px;
+	    top: 450px;
+	    font-size: 20px;
+	}
+
+
+
+
+	div#thirdSection{
+	background-color: #CCB19D;
+	width: 100%;
+	height: 1100px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+
+	#thirdSection .backgroundText{
+		display: none;
+	}
+
+	#thirdSection .sectionHeading{
+		position: absolute;
+		font-size: 120px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
+	#thirdSection .sectionImage{
+		width: 100%;
+		height: 1300px;
+		overflow-y: hidden;
+		filter: brightness(90%);
+	}
+
+	#thirdSection .sectionDescription{
+		left: 5%;
+		top: 350px;
+		width: 90%;
+		line-height: 1.5rem;
+		background-color: #333;
+		padding: 2rem 2rem;
+		text-align: center;
+		opacity: 0.8;
+	}
+
+	#thirdSection #rightDescription.sectionDescription{
+		left: 5%;
+		top: 700px;
+	}
+
+}
+
+
+
+
+
+
+
+/* MIN WIDTH 768 */
+@media only screen and (min-width: 768px){
+	div#firstSection{
+	background-color: #806F78;
+	width: 100%;
+	height: 800px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#firstSection .sectionImage{
+		display: block;
+		position: absolute;
+		top: 250px;
+		left: 500px;
+		width: 100%;
+		height: 500px;
+		overflow-y: hidden;
+	}
+
+	#firstSection .sectionImage#flower1{
+		display: block;
+		position: absolute;
+		left:-100px;
+		top: -100px;
+		width: auto;
+		overflow-y: hidden;
+		z-index: 1;
+	}
+
+	hr{
+		border-width: 2px;
+		background-color: #3E1B18;
+		margin-top: 80px;
+	}
+
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -680px;
+	}
+
+	.centerGroup{
+		position: absolute;
+		left: 90px;
+		top: 500px;
+		width: 50%;
+	}
+
+	.title{
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+
+	.threeSections{
+		margin-right: 30px;
+		font-size: 15px;
+	}
+
+	div#secondSection{
+	background-color: #CCA09D;
+	width: 100%;
+	height: 1000px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}	
+
+	#secondSection .backgroundText{
+	display: none;
+	}
+
+	#secondSection .sectionImage{
+		width: 100%;
+		height: 350px;
+		overflow-y: hidden;
+	}
+
+	#secondSection .sectionHeading{
+		position: absolute;
+		font-size: 150px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
+	#secondSection .sectionSubHeading{
+		position: absolute;
+		color: #3E1B18;
+		font-size: 40px;
+		left: 30px;
+		top: 380px;
+	}
+
+	#secondSection .sectionDescription {
+	    width: 90%;
+	    left: 30px;
+	    top: 450px;
+	    font-size: 20px;
+	}
+
+
+
+
+	div#thirdSection{
+	background-color: #CCB19D;
+	width: 100%;
+	height: 1100px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+
+	#thirdSection .backgroundText{
+		display: none;
+	}
+
+	#thirdSection .sectionHeading{
+		position: absolute;
+		font-size: 120px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
+	#thirdSection .sectionImage{
+		width: 100%;
+		height: 1100px;
+		overflow-y: hidden;
+		filter: brightness(90%);
+	}
+
+	#thirdSection .sectionDescription{
+		left: 5%;
+		top: 350px;
+		width: 90%;
+		line-height: 1.5rem;
+		background-color: #333;
+		padding: 2rem 2rem;
+		text-align: center;
+		opacity: 0.8;
+	}
+
+	#thirdSection #rightDescription.sectionDescription{
+		left: 5%;
+		top: 700px;
+	}
+
+}
+
+
+
+
+
+
+/* MIN WIDTH 850 */
+@media only screen and (min-width: 850px){
+	div#firstSection{
+	background-color: #806F78;
+	width: 100%;
+	height: 800px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#firstSection .sectionImage{
+		display: block;
+		position: absolute;
+		top: 250px;
+		left: 500px;
+		width: 50%;
+		height: 500px;
+		overflow-y: hidden;
+	}
+
+	#firstSection .sectionImage#flower1{
+		display: block;
+		position: absolute;
+		left:-100px;
+		top: -100px;
+		width: auto;
+		overflow-y: hidden;
+		z-index: 1;
+	}
+
+	hr{
+		border-width: 2px;
+		background-color: #3E1B18;
+		margin-top: 80px;
+	}
+
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -700px;
+	}
+
+	.centerGroup{
+		position: absolute;
+		left: 90px;
+		top: 500px;
+		width: 40%;
+	}
+
+	.title{
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+
+	.threeSections{
+		margin-right: 30px;
+		font-size: 15px;
+	}
+}
+
+
+
+
+
+
+
+/* MIN WIDTH 890 */
+@media only screen and (min-width: 890px){
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -750px;
+	}
+}
+
+
+
+
+
+
+/* MIN WIDTH 992 */
+@media only screen and (min-width: 992px){
+	div#firstSection{
+	background-color: #806F78;
+	width: 100%;
+	height: 800px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#firstSection .sectionImage{
+		display: block;
+		position: absolute;
+		top: 250px;
+		left: 500px;
+		width: 50%;
+		height: 500px;
+		overflow-y: hidden;
+	}
+
+	#firstSection .sectionImage#flower1{
+		display: block;
+		position: absolute;
+		left:-100px;
+		top: -100px;
+		width: auto;
+		overflow-y: hidden;
+		z-index: 1;
+	}
+
+	hr{
+		border-width: 2px;
+		background-color: #3E1B18;
+		margin-top: 80px;
+	}
+
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -850px;
+	}
+
+	.centerGroup{
+		position: absolute;
+		left: 90px;
+		top: 500px;
+		width: 40%;
+	}
+
+	.title{
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+
+	.threeSections{
+		margin-right: 30px;
+		font-size: 15px;
+	}
+
+	div#secondSection{
+	background-color: #CCA09D;
+	width: 100%;
+	height: 900px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}	
+
+	#secondSection .backgroundText{
+	display: none;
+	}
+
+	#secondSection .sectionImage{
+		width: 100%;
+		height: 350px;
+		overflow-y: hidden;
+	}
+
+	#secondSection .sectionHeading{
+		position: absolute;
+		font-size: 160px;
+		line-height: 8rem;
+		left: 30px;
+		top: 90px;
+	}
+
+	#secondSection .sectionSubHeading{
+		position: absolute;
+		color: #3E1B18;
+		font-size: 40px;
+		left: 30px;
+		top: 380px;
+	}
+
+	#secondSection .sectionDescription {
+	    width: 90%;
+	    left: 30px;
+	    top: 450px;
+	    font-size: 20px;
+	}
+
+
+
+	div#thirdSection{
+	background-color: #CCB19D;
+	width: 100%;
+	height: 1100px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+
+	#thirdSection .backgroundText{
+		display: none;
+	}
+
+	#thirdSection .sectionHeading{
+		position: absolute;
+		font-size: 150px;
+		line-height: 8rem;
+		left: 30px;
+		top: 20px;
+	}
+
+	#thirdSection .sectionImage{
+		width: 100%;
+		height: 1100px;
+		overflow-y: hidden;
+		filter: brightness(90%);
+	}
+
+	#thirdSection .sectionDescription{
+		left: 5%;
+		top: 350px;
+		width: 90%;
+		line-height: 1.5rem;
+		background-color: #333;
+		padding: 2rem 2rem;
+		text-align: center;
+		opacity: 0.8;
+	}
+
+	#thirdSection #rightDescription.sectionDescription{
+		left: 5%;
+		top: 700px;
+	}
+
+	div#quoteOne{
+	background-color: #3F3F3F;
+	text-align: center;
+	padding: 6rem 2rem;
+	color: #FFF9F1;
+	width: 100%;
+	height: 250px;
+	font-size: 20px;
+	}
+
+}
+
+
+
+
+
+
+
+/* MIN WIDTH 1050 */
+@media only screen and (min-width: 1050px){
+	div#firstSection{
+	background-color: #806F78;
+	width: 100%;
+	height: 800px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#firstSection .sectionImage{
+		display: block;
+		position: absolute;
+		top: 250px;
+		left: 500px;
+		width: 70%;
+		height: 500px;
+		overflow-y: hidden;
+	}
+
+	#firstSection .sectionImage#flower1{
+		display: block;
+		position: absolute;
+		left:-100px;
+		top: -100px;
+		width: auto;
+		overflow-y: hidden;
+		z-index: 1;
+	}
+
+	hr{
+		border-width: 2px;
+		background-color: #3E1B18;
+		margin-top: 80px;
+	}
+
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -900px;
+	}
+
+	.centerGroup{
+		position: absolute;
+		left: 90px;
+		top: 500px;
+		width: 35%;
+	}
+}
+
+
+
+
+
+
+
+/* MIN WIDTH 1200 */
+@media only screen and (min-width: 1200px){
+	div#firstSection{
+	background-color: #806F78;
+	width: 100%;
+	height: 800px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#firstSection .sectionImage{
+		display: block;
+		position: absolute;
+		top: 250px;
+		left: 700px;
+		width: 50%;
+		height: 500px;
+		overflow-y: hidden;
+	}
+
+	#firstSection .sectionImage#flower1{
+		display: block;
+		position: absolute;
+		left:-100px;
+		top: -100px;
+		width: auto;
+		overflow-y: hidden;
+		z-index: 1;
+	}
+
+	hr{
+		border-width: 2px;
+		background-color: #3E1B18;
+		margin-top: 80px;
+	}
+
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -1050px;
+	}
+
+	.centerGroup{
+		position: absolute;
+		left: 90px;
+		top: 500px;
+		width: 60%;
+	}
+
+	.title{
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+
+	.threeSections{
+		margin-right: 30px;
+		font-size: 15px;
+	}
+
+
+	div#secondSection{
+	background-color: #CCA09D;
+	width: 100%;
+	height: 950px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}	
+
+	#secondSection .backgroundText{
+	display: block;
+	font-size: 250px;
+	transform: rotate(-90deg);
+	left: -700px;
+	top: 200px;
+	opacity: 0.2;
+	overflow-y: hidden;
+	position: absolute;
+	}
+
+	#secondSection .sectionImage{
+		float: right;
+		width: 50%;
+		height: 950px;
+		overflow-y: hidden;
+	}
+
+	#secondSection .sectionHeading{
+		position: absolute;
+		width: 50%;
+		font-size: 80px;
+		left: 30px;
+		top: 20px;
+	}
+
+	#secondSection .sectionSubHeading{
+		position: absolute;
+		color: #3E1B18;
+		font-size: 30px;
+		left: 90px;
+		top: 150px;
+	}
+
+	#secondSection .sectionDescription {
+	    width: 40%;
+	    left: 90px;
+	    top: 200px;
+	    font-size: 20px;
+	}
+
+
+
+	div#thirdSection{
+	background-color: #CCB19D;
+	width: 100%;
+	height: 1000px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+
+	#thirdSection .backgroundText{
+		display: block;
+		opacity: 0.5;
+		font-size: 250px;
+		transform: rotate(0deg);
+		left: -40px;
+		top: 700px;
+		overflow-y: hidden;
+		position: absolute;
+	}
+
+	#thirdSection .sectionHeading{
+		top: 700px;
+		left: 100px;
+		width: 50%;
+		line-height: 8rem;
+	}
+
+	#thirdSection .sectionImage{
+		width: 80%;
+		height: 1000px;
+		overflow-y: hidden;
+		filter: brightness(90%);
+	}
+
+	#thirdSection .sectionDescription{
+		left: 100px;
+		top: 100px;
+		width: 40%;
+		line-height: 1.5rem;
+		background-color: #333;
+		padding: 2rem 2rem;
+		text-align: left;
+		opacity: 0.8;
+	}
+
+	#thirdSection #rightDescription.sectionDescription{
+		left: 750px;
+		top: 500px;
+	}
+}
+
+
+
+
+/* MIN WIDTH 1230 */
+@media only screen and (min-width: 1230px){
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -1150px;
+	}
+}
+
+
+/* MIN WIDTH 1300 */
+@media only screen and (min-width: 1300px){
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -1200px;
+	}
+}
+
+/* MIN WIDTH 1370 */
+@media only screen and (min-width: 1370px){
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -1250px;
+	}
+}
+
+/* MIN WIDTH 1430 */
+@media only screen and (min-width: 1430px){
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -1330px;
+	}
+}
+
+
+
+
+
+/* MIN WIDTH 1600 */
+@media only screen and (min-width: 1600px){
+	div#firstSection{
+	background-color: #806F78;
+	width: 100%;
+	height: 1000px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#firstSection .sectionImage{
+		display: block;
+		position: absolute;
+		top: 250px;
+		left: 1000px;
+		width: 50%;
+		height: 700px;
+		overflow-y: hidden;
+	}
+
+	#firstSection .sectionImage#flower1{
+		display: block;
+		position: absolute;
+		left:-100px;
+		top: -200px;
+		width: auto;
+		overflow-y: hidden;
+		z-index: 1;
+	}
+
+	hr{
+		border-width: 2px;
+		background-color: #3E1B18;
+		margin-top: 80px;
+	}
+
+	.roatedHR{
+		-webkit-transform:rotate(90deg);
+		margin-left: -1550px;
+	}
+
+	.centerGroup{
+		position: absolute;
+		left: 90px;
+		top: 600px;
+		width: 60%;
+	}
+
+	.title{
+		font-size: 60px;
+		margin-bottom: 30px;
+	}
+
+	.threeSections{
+		margin-right: 100px;
+		font-size: 20px;
+	}
+
+
+	div#secondSection{
+	background-color: #CCA09D;
+	width: 100%;
+	height: 950px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}	
+
+	#secondSection .backgroundText{
+	display: block;
+	font-size: 250px;
+	transform: rotate(-90deg);
+	left: -700px;
+	top: 200px;
+	opacity: 0.2;
+	overflow-y: hidden;
+	position: absolute;
+	}
+
+	#secondSection .sectionImage{
+		float: right;
+		width: 50%;
+		height: 950px;
+		overflow-y: hidden;
+	}
+
+	#secondSection .sectionHeading{
+		position: absolute;
+		width: 50%;
+		font-size: 120px;
+		left: 30px;
+		top: 50px;
+	}
+
+	#secondSection .sectionSubHeading{
+		position: absolute;
+		color: #3E1B18;
+		font-size: 30px;
+		left: 90px;
+		top: 230px;
+	}
+
+	#secondSection .sectionDescription {
+	    width: 40%;
+	    left: 90px;
+	    top: 300px;
+	    font-size: 20px;
+	}
+
+
+
+	div#thirdSection{
+	background-color: #CCB19D;
+	width: 100%;
+	height: 1000px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+
+	#thirdSection .backgroundText{
+		display: block;
+		opacity: 0.5;
+		font-size: 250px;
+		transform: rotate(0deg);
+		left: -40px;
+		top: 700px;
+		overflow-y: hidden;
+		position: absolute;
+	}
+
+	#thirdSection .sectionHeading{
+		top: 700px;
+		left: 100px;
+		width: 50%;
+		line-height: 8rem;
+	}
+
+	#thirdSection .sectionImage{
+		width: 80%;
+		height: 1000px;
+		overflow-y: hidden;
+		filter: brightness(90%);
+	}
+
+	#thirdSection .sectionDescription{
+		left: 100px;
+		top: 100px;
+		width: 40%;
+		line-height: 1.5rem;
+		background-color: #333;
+		padding: 2rem 2rem;
+		text-align: left;
+		opacity: 0.8;
+	}
+
+	#thirdSection #rightDescription.sectionDescription{
+		left: 950px;
+		top: 500px;
+	}
+
+	div#quoteOne{
+	background-color: #3F3F3F;
+	text-align: center;
+	padding: 6rem 2rem;
+	color: #FFF9F1;
+	width: 100%;
+	height: 200px;
+	font-size: 18px;
+	}
+}
