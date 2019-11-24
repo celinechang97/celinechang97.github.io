@@ -52,7 +52,7 @@ body{
 /* OG PHONE SIZE (375px) */
 
 section#firstSection{
-	background-color: #806F78;
+	background-color: #806F78 !important;
 	width: 100%;
 	height: 800px;
 	overflow-x: hidden;
@@ -88,9 +88,24 @@ hr{
 	margin-top: 80px;
 }
 
+.horizontalHR{
+	transition: all 2.5s ease;
+}
+
+.horizontalHR.hidden{
+	opacity:0;
+	transform: translateX(-2000px);
+}
+
 .roatedHR{
 	-webkit-transform:rotate(90deg);
 	margin-left: -250px;
+	transition: all 2.5s ease;
+}
+
+.roatedHR.hidden{
+	opacity:0;
+	transform: translateY(2000px);
 }
 
 .title{

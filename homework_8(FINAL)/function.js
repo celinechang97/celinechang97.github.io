@@ -1,4 +1,4 @@
-/*TITLE ANIMATION*/
+/* FIRST SECTION ANIMATION */
 $(function(){
 	setTimeout(function(){
 		$('.title').removeClass('hidden');
@@ -23,6 +23,18 @@ $(function(){
 	}, 200);
 });
 
+$(function(){
+	setTimeout(function(){
+		$('.horizontalHR').removeClass('hidden');
+	}, 200);
+});
+
+$(function(){
+	setTimeout(function(){
+		$('.roatedHR').removeClass('hidden');
+	}, 200);
+});
+
 
 
 /* FOR SMOOTH SCROLL */
@@ -44,7 +56,6 @@ $('.centerGroup a').on('click', function(e) {
 
 
 /* FOR BACK TO TOP BUTTON*/
-
 //Get the button
 var mybutton = document.getElementById("top_btn");
 
