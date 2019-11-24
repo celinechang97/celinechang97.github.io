@@ -8,24 +8,32 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="/path/to/parallax.js"></script>
+	<!-- <script src="/path/to/parallax.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
 	<title> Yoga </title>
 </head>
 
 <body>
-		<div id="firstSection">
-			<img id="flower1" class="sectionImage" src="photos/flower1.jpeg">
+		<section id="firstSection">
+			<img id="flower1" class="sectionImage hidden" src="photos/flower1.jpeg">
 			<hr>
 			<hr class="roatedHR">
 			
 			<div class="centerGroup">
-				<div class="title">
-					bringing peace to the mind
-				</div>
-				<div class="threeSectionsGroup">
+				<ul class="title hidden">
+					<li>bringing</li> 
+					<li>peace</li> 
+					<li>to</li> 
+					<li>the</li> 
+					<li>mind</li>
+				</ul>
+				<div class="threeSectionsGroup hidden">
 					<a href="#secondSection"> <span class="threeSections">
 						type
 					</span> </a>
@@ -38,28 +46,28 @@
 				</div>
 			</div>
 			
-			<img class="sectionImage" src="photos/coverphoto.jpeg">
-		</div>
+			<img id="coverPhoto" class="sectionImage hidden" src="photos/coverphoto.jpeg">
+		</section>
 
 		<div class="centerGroup"><a href="#firstSection"><button onclick="topFunction()" id="top_btn" title="Back to top"><i id="arrow" class="material-icons">keyboard_arrow_up</i></button></a></div>
 
-		<div id="secondSection">
-			<div id="typesofyoga" class="backgroundText">
+		<section id="secondSection">
+			<div id="typesofyogaBG" class="backgroundText">
 				type of yoga
 			</div>
-			<div class="sectionHeading">
+			<blockquote id="typesofyogaHeading" class="sectionHeading">
 				type of yoga
-			</div>
-			<div class="sectionSubHeading">
+			</blockquote>
+			<div id="ashtangaTitle" class="sectionSubHeading">
 				Ashtanga
 			</div>
-			<div class="sectionDescription">
+			<div id="ashtangaDescription" class="sectionDescription">
 				Ashtanga yoga is a method of yoga taught by the late Sri K. Pattabhi Jois in Mysore, India.  Also known as Guruji, Pattahbi Jois brought the Ashtanga Yoga method to westerners in the early 1970s.  Since then, the practice of Ashtanga Yoga, while still sparse in the United States compared to other methods (Vinyasa/Flow, Power, and Hot Yoga), has continued to gain popularity for it’s strong mental, spiritual, and physical benefits.  
 				<br> <br>
 				This form of yoga involves synchronizing the breath with a set series of postures in a vinyasa (“flow”) style.  Through breath and vinyasa, internal heat is produced, leading to cleansing, improved circulation, and allowing the body to become healthy, light, and strong.  In the Ashtanga Yoga method, each posture in each series is a preparation for the next posture, which helps the yoga student develop strength, flexibility, and balance of both the body and mind.
 			</div>
 			<div class="sectionImage"></div>
-		</div>
+		</section>
 
 		<!-- <div id="secondSection">
 			<div class="backgroundText">
@@ -87,15 +95,15 @@
 			</div>
 		</div> -->
 
-		<div id="thirdSection">
+		<section id="thirdSection">
 			<div class="sectionImage"></div>
-			<div class="backgroundText">
+			<div id="benefitsofyogaBG" class="backgroundText">
 				benefits of yoga
 			</div>
-			<div class="sectionHeading">
+			<div id="benefitsofyogaHeading" class="sectionHeading">
 				benefits of yoga
 			</div>
-			<div class="sectionDescription">
+			<div id="leftDescription" class="sectionDescription">
 				1. improve flexibility, strength, and posture  
 				<br><br>
 				2. better all-round fitness 
@@ -118,13 +126,13 @@
 				10. live longer  
 			</div>	
 						
-		</div>
+		</section>
 
-		<div id="fourthSection">
-			<div class="backgroundText">
+		<section id="fourthSection">
+			<div id="posturesofyogaBG" class="backgroundText">
 				postures of yoga
 			</div>
-			<div class="sectionHeading">
+			<div id="posturesofyogaHeading" class="sectionHeading">
 				postures of yoga
 			</div>
 			<div class="scrolling-wrapper">
@@ -288,7 +296,7 @@
 					</div>
 				</div>
 			</div> -->
-		</div>
+		</section>
 
 		<div id="quoteOne">
 			<p> life is all about balance. you don't always have to be getting stuff done. sometimes it's perfectly okay, and absolutely necessary, to shut down, kick back, and do nothing. </p>
