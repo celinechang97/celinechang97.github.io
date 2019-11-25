@@ -24,6 +24,10 @@ body{
 	height: 100vh;
 }
 
+.sectionDescription{
+	font-family: 'Muli', sans-serif;
+}
+
 
 #top_btn{
 	display: none;
@@ -47,8 +51,6 @@ body{
 
 
 
-
-
 /* OG PHONE SIZE (375px) */
 
 section#firstSection{
@@ -60,29 +62,31 @@ section#firstSection{
 	position: relative;
 	background-size: cover;
 	background: fixed;
+	z-index: 1;
 }
 
 #firstSection .sectionImage{
 	display: none;
-	position: absolute;
-	top: 150px;
-	left: 1000px;
-	width: 50%;
-	height: 700px;
-	overflow-y: hidden;
 }
 
 #firstSection .sectionImage#flower1{
-	display: none;
+	display: block;
+	background: #806F78;
 	position: absolute;
-	left:-120px;
-	top: -300px;
-	width: 30%;
+	left:-100px;
+	top: -100px;
+	width: 100%;
+	height: auto;
 	overflow-y: hidden;
-	z-index: 1;
+	transition: all 3s ease;
+	transition-delay: 3s;
 }
 
-hr{
+#firstSection .sectionImage#flower1.hidden{
+	opacity: 0;
+}
+
+/*hr{
 	border-width: 2px;
 	background-color: #3E1B18;
 	margin-top: 80px;
@@ -106,12 +110,7 @@ hr{
 .roatedHR.hidden{
 	opacity:0;
 	transform: translateY(2000px);
-}
-
-.title{
-	font-size: 40px;
-	margin-bottom: 30px;
-}
+}*/
 
 .title{
 	font-size: 40px;
@@ -139,12 +138,13 @@ hr{
 .title.hidden li:nth-child(3){transform: translateX(-150px) translateY(-80px);}
 .title.hidden li:nth-child(4){transform: translateX(10px) translateY(-200px);}
 .title.hidden li:nth-child(5){transform: translateX(-300px) translateY(200px);}
-
+.title.hidden li:nth-child(6){transform: translateX(300px) translateY(200px);}
+.title.hidden li:nth-child(7){transform: translateX(-100px) translateY(20px);}
 
 .centerGroup{
 	position: absolute;
 	left: 30px;
-	top: 500px;
+	top: 400px;
 	width: 90%;
 }
 
@@ -187,10 +187,10 @@ section#secondSection{
 
 #secondSection .sectionHeading{
 	position: absolute;
-	font-size: 60px;
+	font-size: 70px;
 	line-height: 5rem;
 	left: 30px;
-	top: 30px;
+	top: 50px;
 }
 
 #secondSection .sectionSubHeading{
@@ -265,7 +265,7 @@ section#thirdSection{
 section#fourthSection{
 	background-color: #F3E0DF;
 	width: 100%;
-	height: 1050px;
+	height: 1150px;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	position: relative;
@@ -313,11 +313,13 @@ section#fourthSection{
 	color: #3E1B18;
 	font-size: 30px;
 	margin-top: 30px;
+	font-family: 'Muli', sans-serif;
 }
 
 .yogaNameEng{
 	color: #3E1B18;
 	font-size: 20px;
+	font-family: 'Muli', sans-serif;
 }
 
 
@@ -328,6 +330,8 @@ div#quoteOne{
 	color: #FFF9F1;
 	width: 100%;
 	height: 300px;
+	font-style: italic;
+	font-family: 'Muli', sans-serif;
 }
 
 
@@ -348,12 +352,6 @@ div#quoteOne{
 
 	#firstSection .sectionImage{
 		display: none;
-		position: absolute;
-		top: 250px;
-		left: 500px;
-		width: 100%;
-		height: 500px;
-		overflow-y: hidden;
 	}
 
 	#firstSection .sectionImage#flower1{
@@ -361,18 +359,12 @@ div#quoteOne{
 		position: absolute;
 		left:-100px;
 		top: -100px;
-		width: auto;
+		width: 100%;
+		height: auto;
 		overflow-y: hidden;
-		z-index: 1;
-		transition: all 3s ease;
 	}
 
-	#firstSection .sectionImage#flower1.hidden{
-		opacity: 0;
-		transform: translateY(-200px);
-	}
-
-	hr{
+	/*hr{
 		border-width: 2px;
 		background-color: #3E1B18;
 		margin-top: 80px;
@@ -381,12 +373,12 @@ div#quoteOne{
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -400px;
-	}
+	}*/
 
 	.centerGroup{
 		position: absolute;
 		left: 90px;
-		top: 500px;
+		top: 470px;
 		width: 80%;
 	}
 
@@ -494,7 +486,7 @@ div#quoteOne{
 	section#fourthSection{
 	background-color: #F3E0DF;
 	width: 100%;
-	height: 1050px;
+	height: 1150px;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	position: relative;
@@ -576,12 +568,6 @@ div#quoteOne{
 
 	#firstSection .sectionImage{
 		display: none;
-		position: absolute;
-		top: 250px;
-		left: 500px;
-		width: 100%;
-		height: 500px;
-		overflow-y: hidden;
 	}
 
 	#firstSection .sectionImage#flower1{
@@ -589,12 +575,12 @@ div#quoteOne{
 		position: absolute;
 		left:-100px;
 		top: -100px;
-		width: auto;
+		width: 70%;
+		height: auto;
 		overflow-y: hidden;
-		z-index: 1;
 	}
 
-	hr{
+	/*hr{
 		border-width: 2px;
 		background-color: #3E1B18;
 		margin-top: 80px;
@@ -603,12 +589,12 @@ div#quoteOne{
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -600px;
-	}
+	}*/
 
 	.centerGroup{
 		position: absolute;
 		left: 90px;
-		top: 500px;
+		top: 470px;
 		width: 80%;
 	}
 
@@ -644,10 +630,10 @@ div#quoteOne{
 
 	#secondSection .sectionHeading{
 		position: absolute;
-		font-size: 120px;
+		font-size: 130px;
 		line-height: 8rem;
 		left: 30px;
-		top: 20px;
+		top: 90px;
 	}
 
 	#secondSection .sectionSubHeading{
@@ -715,7 +701,7 @@ div#quoteOne{
 	section#fourthSection{
 	background-color: #F3E0DF;
 	width: 100%;
-	height: 1050px;
+	height: 1150px;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	position: relative;
@@ -789,19 +775,16 @@ div#quoteOne{
 	}
 
 	#firstSection .sectionImage{
-		display: block;
-		position: absolute;
-		top: 250px;
-		left: 500px;
-		width: 100%;
-		height: 500px;
-		overflow-y: hidden;
-		transition: all 3s ease;
-	}
-
-	#firstSection .sectionImage.hidden{
-		opacity: 0;
-		transform: translateX(200px);
+	display: block;
+	float: right;
+	width: 50%;
+	height: 1000px;
+	overflow-y: hidden;
+	background: url('photos/coverphoto.jpeg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	transition: all 3s ease;
+	opacity: 0.8;
 	}
 
 	#firstSection .sectionImage#flower1{
@@ -809,12 +792,12 @@ div#quoteOne{
 		position: absolute;
 		left:-100px;
 		top: -100px;
-		width: auto;
+		width: 60%;
+		height: auto;
 		overflow-y: hidden;
-		z-index: 1;
 	}
 
-	hr{
+	/*hr{
 		border-width: 2px;
 		background-color: #3E1B18;
 		margin-top: 80px;
@@ -823,13 +806,13 @@ div#quoteOne{
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -680px;
-	}
+	}*/
 
 	.centerGroup{
 		position: absolute;
 		left: 90px;
-		top: 500px;
-		width: 50%;
+		top: 470px;
+		width: 40%;
 	}
 
 	.title{
@@ -866,7 +849,7 @@ div#quoteOne{
 		font-size: 150px;
 		line-height: 8rem;
 		left: 30px;
-		top: 20px;
+		top: 50px;
 	}
 
 	#secondSection .sectionSubHeading{
@@ -903,7 +886,7 @@ div#quoteOne{
 
 	#thirdSection .sectionHeading{
 		position: absolute;
-		font-size: 120px;
+		font-size: 150px;
 		line-height: 8rem;
 		left: 30px;
 		top: 20px;
@@ -950,27 +933,7 @@ div#quoteOne{
 	position: relative;
 	}
 
-	#firstSection .sectionImage{
-		display: block;
-		position: absolute;
-		top: 250px;
-		left: 500px;
-		width: 50%;
-		height: 500px;
-		overflow-y: hidden;
-	}
-
-	#firstSection .sectionImage#flower1{
-		display: block;
-		position: absolute;
-		left:-100px;
-		top: -100px;
-		width: auto;
-		overflow-y: hidden;
-		z-index: 1;
-	}
-
-	hr{
+	/*hr{
 		border-width: 2px;
 		background-color: #3E1B18;
 		margin-top: 80px;
@@ -979,13 +942,13 @@ div#quoteOne{
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -700px;
-	}
+	}*/
 
 	.centerGroup{
 		position: absolute;
 		left: 90px;
-		top: 500px;
-		width: 40%;
+		top: 470px;
+		width: 38%;
 	}
 
 	.title{
@@ -1006,12 +969,12 @@ div#quoteOne{
 
 
 /* MIN WIDTH 890 */
-@media only screen and (min-width: 890px){
+/*@media only screen and (min-width: 890px){
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -750px;
 	}
-}
+}*/
 
 
 
@@ -1029,27 +992,17 @@ div#quoteOne{
 	position: relative;
 	}
 
-	#firstSection .sectionImage{
-		display: block;
-		position: absolute;
-		top: 250px;
-		left: 500px;
-		width: 50%;
-		height: 500px;
-		overflow-y: hidden;
-	}
-
 	#firstSection .sectionImage#flower1{
-		display: block;
-		position: absolute;
-		left:-100px;
-		top: -100px;
-		width: auto;
-		overflow-y: hidden;
-		z-index: 1;
+	display: block;
+	position: absolute;
+	left:-100px;
+	top: -100px;
+	width: 50%;
+	height: auto;
+	overflow-y: hidden;
 	}
 
-	hr{
+	/*hr{
 		border-width: 2px;
 		background-color: #3E1B18;
 		margin-top: 80px;
@@ -1058,12 +1011,12 @@ div#quoteOne{
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -850px;
-	}
+	}*/
 
 	.centerGroup{
 		position: absolute;
 		left: 90px;
-		top: 500px;
+		top: 470px;
 		width: 40%;
 	}
 
@@ -1099,7 +1052,7 @@ div#quoteOne{
 
 	#secondSection .sectionHeading{
 		position: absolute;
-		font-size: 160px;
+		font-size: 190px;
 		line-height: 8rem;
 		left: 30px;
 		top: 90px;
@@ -1137,7 +1090,7 @@ div#quoteOne{
 
 	#thirdSection .sectionHeading{
 		position: absolute;
-		font-size: 150px;
+		font-size: 190px;
 		line-height: 8rem;
 		left: 30px;
 		top: 20px;
@@ -1205,27 +1158,7 @@ div#quoteOne{
 	position: relative;
 	}
 
-	#firstSection .sectionImage{
-		display: block;
-		position: absolute;
-		top: 250px;
-		left: 500px;
-		width: 70%;
-		height: 500px;
-		overflow-y: hidden;
-	}
-
-	#firstSection .sectionImage#flower1{
-		display: block;
-		position: absolute;
-		left:-100px;
-		top: -100px;
-		width: auto;
-		overflow-y: hidden;
-		z-index: 1;
-	}
-
-	hr{
+	/*hr{
 		border-width: 2px;
 		background-color: #3E1B18;
 		margin-top: 80px;
@@ -1234,12 +1167,12 @@ div#quoteOne{
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -900px;
-	}
+	}*/
 
 	.centerGroup{
 		position: absolute;
 		left: 90px;
-		top: 500px;
+		top: 470px;
 		width: 35%;
 	}
 }
@@ -1261,27 +1194,7 @@ div#quoteOne{
 	position: relative;
 	}
 
-	#firstSection .sectionImage{
-		display: block;
-		position: absolute;
-		top: 250px;
-		left: 700px;
-		width: 50%;
-		height: 500px;
-		overflow-y: hidden;
-	}
-
-	#firstSection .sectionImage#flower1{
-		display: block;
-		position: absolute;
-		left:-100px;
-		top: -100px;
-		width: auto;
-		overflow-y: hidden;
-		z-index: 1;
-	}
-
-	hr{
+	/*hr{
 		border-width: 2px;
 		background-color: #3E1B18;
 		margin-top: 80px;
@@ -1290,7 +1203,7 @@ div#quoteOne{
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -1050px;
-	}
+	}*/
 
 	.centerGroup{
 		position: absolute;
@@ -1323,7 +1236,7 @@ div#quoteOne{
 	display: block;
 	font-size: 250px;
 	transform: rotate(-90deg);
-	left: -700px;
+	left: -600px;
 	top: 200px;
 	opacity: 0.2;
 	overflow-y: hidden;
@@ -1437,37 +1350,37 @@ div#quoteOne{
 
 
 /* MIN WIDTH 1230 */
-@media only screen and (min-width: 1230px){
+/*@media only screen and (min-width: 1230px){
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -1150px;
 	}
-}
+}*/
 
 
 /* MIN WIDTH 1300 */
-@media only screen and (min-width: 1300px){
+/*@media only screen and (min-width: 1300px){
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -1200px;
 	}
-}
+}*/
 
 /* MIN WIDTH 1370 */
-@media only screen and (min-width: 1370px){
+/*@media only screen and (min-width: 1370px){
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -1250px;
 	}
-}
+}*/
 
 /* MIN WIDTH 1430 */
-@media only screen and (min-width: 1430px){
+/*@media only screen and (min-width: 1430px){
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -1330px;
 	}
-}
+}*/
 
 
 
@@ -1484,27 +1397,16 @@ div#quoteOne{
 	position: relative;
 	}
 
-	#firstSection .sectionImage{
-		display: block;
-		position: absolute;
-		top: 250px;
-		left: 1000px;
-		width: 50%;
-		height: 700px;
-		overflow-y: hidden;
-	}
-
 	#firstSection .sectionImage#flower1{
 		display: block;
 		position: absolute;
-		left:-100px;
-		top: -200px;
+		left:-250px;
+		top: -350px;
 		width: auto;
 		overflow-y: hidden;
-		z-index: 1;
 	}
 
-	hr{
+	/*hr{
 		border-width: 2px;
 		background-color: #3E1B18;
 		margin-top: 80px;
@@ -1513,12 +1415,12 @@ div#quoteOne{
 	.roatedHR{
 		-webkit-transform:rotate(90deg);
 		margin-left: -1550px;
-	}
+	}*/
 
 	.centerGroup{
 		position: absolute;
 		left: 90px;
-		top: 600px;
+		top: 550px;
 		width: 60%;
 	}
 
@@ -1546,7 +1448,7 @@ div#quoteOne{
 	display: block;
 	font-size: 250px;
 	transform: rotate(-90deg);
-	left: -700px;
+	left: -600px;
 	top: 200px;
 	opacity: 0.2;
 	overflow-y: hidden;
@@ -1643,7 +1545,7 @@ div#quoteOne{
 	color: #FFF9F1;
 	width: 100%;
 	height: 200px;
-	font-size: 18px;
+	font-size: 20px;
 	}
 
 }
