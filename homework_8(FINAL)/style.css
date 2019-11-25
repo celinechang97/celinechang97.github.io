@@ -79,7 +79,7 @@ section#firstSection{
 	height: auto;
 	overflow-y: hidden;
 	transition: all 3s ease;
-	transition-delay: 3s;
+	/*transition-delay: 3s;*/
 }
 
 #firstSection .sectionImage#flower1.hidden{
