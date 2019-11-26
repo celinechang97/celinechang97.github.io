@@ -121,7 +121,6 @@ section#firstSection{
 
 .title li{
 	display: inline-block;
-	opacity: 1;
 	transition: all 2.5s ease;
 }
 
@@ -323,6 +322,44 @@ section#fourthSection{
 }
 
 
+section#fifthSection{
+	background-color: #B28D8B;
+	width: 100%;
+	height: 1500px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+#fifthSection .backgroundText{
+	display: none;
+}
+
+#fifthSection .sectionHeading{
+	position: absolute;
+	font-size: 70px;
+	line-height: 5rem;
+	left: 30px;
+	top: 50px;
+}
+
+#fifthSection .sectionDescription{
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+#fifthSection .sectionImage{
+	width: 70%;
+}
+
+.insta_group{
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: -100px;
+}
+
+
+
 div#quoteOne{
 	background-color: #3F3F3F;
 	text-align: center;
@@ -335,6 +372,12 @@ div#quoteOne{
 }
 
 
+/* MIN WIDTH 450 */
+@media only screen and (min-width: 450px){
+	section#fifthSection{
+	height: 1600px;
+	}
+}
 
 
 
@@ -539,6 +582,19 @@ div#quoteOne{
 		font-size: 20px;
 	}
 
+	section#fifthSection{
+		height: 1800px;
+	}
+
+
+	#fifthSection .sectionHeading{
+	position: absolute;
+	font-size: 90px;
+	line-height: 5rem;
+	left: 30px;
+	top: 50px;
+	}
+
 
 	div#quoteOne{
 	background-color: #3F3F3F;
@@ -553,6 +609,23 @@ div#quoteOne{
 }
 
 
+
+
+
+/* MIN WIDTH 600 */
+@media only screen and (min-width: 600px){
+	section#fifthSection{
+		height: 1900px;
+	}
+}
+
+
+/* MIN WIDTH 640 */
+@media only screen and (min-width: 640px){
+	section#fifthSection{
+		height: 2100px;
+	}
+}
 
 
 /* MIN WIDTH 700 */
@@ -755,6 +828,18 @@ div#quoteOne{
 		font-size: 20px;
 	}
 
+	section#fifthSection{
+		height: 2200px;
+	}
+
+	#fifthSection .sectionHeading{
+	position: absolute;
+	font-size: 120px;
+	line-height: 5rem;
+	left: 30px;
+	top: 50px;
+	}
+
 }
 
 
@@ -915,6 +1000,10 @@ div#quoteOne{
 		top: 700px;
 	}
 
+	section#fifthSection{
+		height: 2400px;
+	}
+
 }
 
 
@@ -960,24 +1049,30 @@ div#quoteOne{
 		margin-right: 30px;
 		font-size: 15px;
 	}
+
+	section#fifthSection{
+		height: 2500px;
+	}
 }
 
 
 
 
 
-
-
-/* MIN WIDTH 890 */
-/*@media only screen and (min-width: 890px){
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -750px;
+/* MIN WIDTH 992 */
+@media only screen and (min-width: 910px){
+	section#fifthSection{
+		height: 2600px;
 	}
-}*/
+}
 
 
-
+/* MIN WIDTH 960 */
+@media only screen and (min-width: 960px){
+	section#fifthSection{
+		height: 2800px;
+	}
+}
 
 
 
@@ -1122,10 +1217,39 @@ div#quoteOne{
 
 	#fourthSection .sectionHeading{
 		position: absolute;
-		font-size: 150px;
+		font-size: 190px;
 		line-height: 8rem;
 		left: 30px;
 		top: 20px;
+	}
+
+
+	section#fifthSection{
+	background-color: #B28D8B;
+	width: 100%;
+	height: 750px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+	#fifthSection .sectionHeading{
+		position: absolute;
+		font-size: 190px;
+		line-height: 5rem;
+		left: 30px;
+		top: 80px;
+	}
+
+	#fifthSection .sectionDescription{
+		font-size: 24px;
+		margin-top: 20px;
+	}
+
+	.insta_group{
+		text-align: center;
+		margin-top: 300px;
+		margin-bottom: -100px;
 	}
 
 
@@ -1329,7 +1453,6 @@ div#quoteOne{
 
 	#fourthSection .sectionHeading{
 		position: absolute;
-		font-size: 150px;
 		line-height: 8rem;
 		left: 30px;
 		top: 50px;
@@ -1344,41 +1467,46 @@ div#quoteOne{
 		opacity: 0.2;
 		overflow-y: hidden;
 	}
+
+
+
+	section#fifthSection{
+		background-color: #B28D8B;
+		width: 100%;
+		height: 1100px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		position: relative;
+	}
+
+	#fifthSection .sectionHeading{
+		position: absolute;
+		line-height: 8rem;
+		left: 30px;
+		top: 700px;
+		margin-top: 100px;
+	}
+
+	#fifthSection .backgroundText{
+		display: block;
+		opacity: 0.2;
+		font-size: 250px;
+		transform: rotate(0deg);
+		line-height: 15rem;
+		left: 20px;
+		top: -90px;
+		overflow-y: hidden;
+		position: absolute;
+	}
 }
 
 
 
 
-/* MIN WIDTH 1230 */
-/*@media only screen and (min-width: 1230px){
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -1150px;
-	}
-}*/
-
-
-/* MIN WIDTH 1300 */
+/* MIN WIDTH 1300*/
 /*@media only screen and (min-width: 1300px){
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -1200px;
-	}
-}*/
-
-/* MIN WIDTH 1370 */
-/*@media only screen and (min-width: 1370px){
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -1250px;
-	}
-}*/
-
-/* MIN WIDTH 1430 */
-/*@media only screen and (min-width: 1430px){
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -1330px;
+	#fifthSection .sectionImage{
+		width: 70%;
 	}
 }*/
 
