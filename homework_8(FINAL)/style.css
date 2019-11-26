@@ -13,6 +13,7 @@ a:link {
 
 a:hover{
 	color: #5A3448;
+	cursor:pointer;
 }
 
 
@@ -86,32 +87,6 @@ section#firstSection{
 	opacity: 0;
 }
 
-/*hr{
-	border-width: 2px;
-	background-color: #3E1B18;
-	margin-top: 80px;
-}
-
-.horizontalHR{
-	transition: all 2.5s ease;
-}
-
-.horizontalHR.hidden{
-	opacity:0;
-	transform: translateX(-2000px);
-}
-
-.roatedHR{
-	-webkit-transform:rotate(90deg);
-	margin-left: -250px;
-	transition: all 2.5s ease;
-}
-
-.roatedHR.hidden{
-	opacity:0;
-	transform: translateY(2000px);
-}*/
-
 .title{
 	font-size: 40px;
 	margin-bottom: 30px;
@@ -173,6 +148,7 @@ section#secondSection{
 
 #secondSection .backgroundText{
 	display: none;
+	transition: all .4s ease;
 }
 
 #secondSection .sectionImage{
@@ -190,6 +166,7 @@ section#secondSection{
 	line-height: 5rem;
 	left: 30px;
 	top: 50px;
+	transition: all .4s ease;
 }
 
 #secondSection .sectionSubHeading{
@@ -229,6 +206,7 @@ section#thirdSection{
 	line-height: 5rem;
 	left: 30px;
 	top: 30px;
+	transition: all .4s ease;
 }
 
 #thirdSection .sectionImage{
@@ -253,11 +231,13 @@ section#thirdSection{
 	padding: 2rem 2rem;
 	text-align: center;
 	opacity: 0.8;
+	transition: all .4s ease;
 }
 
 #thirdSection #rightDescription.sectionDescription{
 	left: 5%;
 	top: 660px;
+	transition: all .4s ease;
 }
 
 
@@ -286,6 +266,7 @@ section#fourthSection{
 	line-height: 5rem;
 	left: 30px;
 	top: 30px;
+	transition: all .4s ease;
 }
 
 .scrolling-wrapper {
@@ -333,6 +314,7 @@ section#fifthSection{
 
 #fifthSection .backgroundText{
 	display: none;
+	transition: all .4s ease;
 }
 
 #fifthSection .sectionHeading{
@@ -341,6 +323,7 @@ section#fifthSection{
 	line-height: 5rem;
 	left: 30px;
 	top: 50px;
+	transition: all .4s ease;
 }
 
 #fifthSection .sectionDescription{
@@ -356,8 +339,18 @@ section#fifthSection{
 	text-align: center;
 	margin-top: 200px;
 	margin-bottom: -100px;
+	z-index: 1;
 }
 
+#insta1{
+	transition: all .5s ease;
+}
+#insta2{
+	transition: all .5s ease;
+}
+#insta3{
+	transition: all .5s ease;
+}
 
 
 div#quoteOne{
