@@ -1,4 +1,4 @@
-/* FIRST SECTION ANIMATION */
+/* FIRST SECTION: TITLE and FLOWER ANIMATION */
 $(function(){
 	setTimeout(function(){
 		$('.title').removeClass('hidden');
@@ -18,17 +18,6 @@ $(function(){
 });
 
 
-// $(function(){
-// 	setTimeout(function(){
-// 		$('.horizontalHR').removeClass('hidden');
-// 	}, 200);
-// });
-
-// $(function(){
-// 	setTimeout(function(){
-// 		$('.roatedHR').removeClass('hidden');
-// 	}, 200);
-// });
 
 
 
@@ -50,6 +39,7 @@ $('.centerGroup a').on('click', function(e) {
 
 
 
+
 /* FOR BACK TO TOP BUTTON*/
 //Get the button
 var mybutton = document.getElementById("top_btn");
@@ -66,17 +56,11 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
 
 
 
 
-
-/* FOR ANIMATION */
+/* FOR SCROLLING ANIMATION THROUGHOUT THE PAGE */
 var tl = new TimelineMax({onUpdate:updatePercentage});
 var tl2 = new TimelineMax({onUpdate:updatePercentage});
 var tl3 = new TimelineMax({onUpdate:updatePercentage});
@@ -84,7 +68,6 @@ var tl4 = new TimelineMax({onUpdate:updatePercentage});
 var tl5 = new TimelineMax({onUpdate:updatePercentage});
 var tl6 = new TimelineMax({onUpdate:updatePercentage});
 var tl7 = new TimelineMax({onUpdate:updatePercentage});
-var tl8 = new TimelineMax({onUpdate:updatePercentage});
 const controller = new ScrollMagic.Controller();
 
 tl.from('#typesofyogaHeading', 1080, {x:-100, opacity: 0});
@@ -95,7 +78,7 @@ tl2.from('#benefitsofyogaBG', 2000, {x:50, opacity: 0});
 tl2.from('#leftDescription', 4000, {y:-100, opacity: 0});
 tl2.from('#rightDescription', 4000, {x:100, opacity: 0});
 
-tl3.from('#posturesofyogaHeading', 1080, {x:-500, opacity: 0});
+tl3.from('#posturesofyogaHeading', 2000, {x:-500, opacity: 0});
 tl3.from('#posturesofyogaBG', 180, {x:50, opacity: 0});
 
 tl4.from('.scrolling-wrapper', 180, {y:500, opacity: 0});
@@ -105,7 +88,7 @@ tl5.from('#ashtangaDescription', 180, {y:500, opacity: 0});
 tl6.from('#ashtangaTitle', 30, {x:500, opacity: 0});
 
 tl7.from('#inspirationBG', 3000, {x:-200, opacity: 0});
-tl7.from('#inspirationHeading', 1080, {x:-500, opacity: 0});
+tl7.from('#inspirationHeading', 5000, {x:-500, opacity: 0});
 tl7.from('#insta1', 3000, {x:-10, opacity: 0});
 tl7.from('#insta2', 3000, {y:-10, opacity: 0});
 tl7.from('#insta3', 3000, {x:10, opacity: 0});
@@ -171,10 +154,7 @@ const scene7 = new ScrollMagic.Scene({
     .addTo(controller);
 
 
-
-
 function updatePercentage() {
-  //percent.innerHTML = (tl.progress() *100 ).toFixed();
   tl.progress();
 }
 
@@ -182,8 +162,7 @@ function updatePercentage() {
 
 
 
-
-/* ROTATE FLOWER1 */
+/* ROTATE FLOWER1 ON SCROLL */
 $(window).scroll(function() {
 
   // get how far we've scrolled from the top of our screen

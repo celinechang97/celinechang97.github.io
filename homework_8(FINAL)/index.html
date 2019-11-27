@@ -11,7 +11,7 @@
 	<!-- <script src="/path/to/parallax.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="Assets/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
@@ -20,11 +20,11 @@
 </head>
 
 <body>
+		<!-- FIRST SECTION: HOME PAGE -->
 		<section id="firstSection">
-			<img id="flower1" class="sectionImage hidden" src="photos/flower1.png">
-			<!-- <hr class="horizontalHR hidden" >
-			<hr class="roatedHR hidden"> -->
+			<img id="flower1" class="sectionImage hidden" src="Assets/photos/flower1.png">
 			
+			<!-- TITLE AND NAVBAR-ISH -->
 			<div class="centerGroup">
 				<ul class="title hidden">
 					<li>yoga, </li>
@@ -51,12 +51,20 @@
 				</div>
 			</div>
 			<div class="sectionImage"></div>
-			
-			<!-- <img id="coverPhoto" class="sectionImage hidden" src="photos/coverphoto.jpeg"> -->
 		</section>
 
-		<div class="centerGroup"><a href="#firstSection"><button onclick="topFunction()" id="top_btn" title="Back to top"><i id="arrow" class="material-icons">keyboard_arrow_up</i></button></a></div>
 
+
+
+
+		<!-- BACK TO TOP BUTTON -->
+		<div class="centerGroup"><a href="#firstSection"><button id="top_btn" title="Back to top"><i id="arrow" class="material-icons">keyboard_arrow_up</i></button></a></div>
+
+
+
+
+
+		<!-- SECOND SECTION: TYPE OF YOGA -->
 		<section id="secondSection">
 			<div id="typesofyogaBG" class="backgroundText">
 				type of yoga
@@ -69,13 +77,15 @@
 			</div>
 			<div id="ashtangaDescription" class="sectionDescription">
 				Ashtanga yoga is a method of yoga taught by the late Sri K. Pattabhi Jois in Mysore, India.  Also known as Guruji, Pattahbi Jois brought the Ashtanga Yoga method to westerners in the early 1970s.  Since then, the practice of Ashtanga Yoga, while still sparse in the United States compared to other methods (Vinyasa/Flow, Power, and Hot Yoga), has continued to gain popularity for it’s strong mental, spiritual, and physical benefits.  
-				<br> <br>
+				<br> 
+				<br>
 				This form of yoga involves synchronizing the breath with a set series of postures in a vinyasa (“flow”) style.  Through breath and vinyasa, internal heat is produced, leading to cleansing, improved circulation, and allowing the body to become healthy, light, and strong.  In the Ashtanga Yoga method, each posture in each series is a preparation for the next posture, which helps the yoga student develop strength, flexibility, and balance of both the body and mind.
 			</div>
 			<div class="sectionImage"></div>
 		</section>
 
-		<!-- <div id="secondSection">
+		<!-- 
+			<div id="secondSection">
 			<div class="backgroundText">
 				types of yoga
 			</div>
@@ -99,8 +109,14 @@
 			<div class="sectionImage">
 				<img id="vinyasa_image"src="photos/vinyasa.jpeg">
 			</div>
-		</div> -->
+			</div> 
+		-->
 
+
+
+
+
+		<!-- THIRD SECTION: BENEFITS OF YOGA -->
 		<section id="thirdSection">
 			<div class="sectionImage"></div>
 			<div id="benefitsofyogaBG" class="backgroundText">
@@ -109,6 +125,8 @@
 			<div id="benefitsofyogaHeading" class="sectionHeading">
 				benefits of yoga
 			</div>
+
+			<!-- FIRST BOX OF BENEFITS -->
 			<div id="leftDescription" class="sectionDescription">
 				1. improve flexibility, strength, and posture  
 				<br><br>
@@ -120,6 +138,8 @@
 				<br><br>
 				5. reduce stress  
 			</div>
+
+			<!-- SECOND BOX OF BENEFTIS -->
 			<div id="rightDescription" class="sectionDescription">
 				6. breathe better 
 				<br><br>
@@ -130,10 +150,14 @@
 				9. improve concentration and think clearer 
 				<br><br>
 				10. live longer  
-			</div>	
-						
+			</div>				
 		</section>
 
+
+
+
+
+		<!-- FOURTH SECTION: POSTURES OF YOGA -->
 		<section id="fourthSection">
 			<div id="posturesofyogaBG" class="backgroundText">
 				postures of yoga
@@ -141,9 +165,11 @@
 			<div id="posturesofyogaHeading" class="sectionHeading">
 				postures of yoga
 			</div>
+
+			<!-- HORIZONTAL SCROLL OF THE FLOW -->
 			<div class="scrolling-wrapper">
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga1.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga1.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Urdhva hastasana,
 				</div>
@@ -152,7 +178,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga2.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga2.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Bhujangasana,
 				</div>
@@ -161,7 +187,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga3.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga3.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Parvatasana,
 				</div>
@@ -170,7 +196,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga4.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga4.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Eka pada adho mukha svanasana
 				</div>
@@ -179,7 +205,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga5.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga5.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Virabhadrasana I,
 				</div>
@@ -188,7 +214,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga6.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga6.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Virabhadrasana II,
 				</div>
@@ -197,7 +223,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga7.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga7.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Virabhadrasana III,
 				</div>
@@ -206,7 +232,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga8.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga8.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Ushtrasana,
 				</div>
@@ -215,7 +241,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga9.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga9.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Vrschikasana,
 				</div>
@@ -224,7 +250,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga10.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga10.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Sirsasana,
 				</div>
@@ -233,7 +259,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga11.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga11.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Hanumanasana,
 				</div>
@@ -242,7 +268,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga12.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga12.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Navasana,
 				</div>
@@ -251,7 +277,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga13.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga13.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Rajakapotasana,
 				</div>
@@ -260,7 +286,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga14.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga14.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Sarvangasana,
 				</div>
@@ -269,7 +295,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga15.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga15.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Karna pidasana,
 				</div>
@@ -278,7 +304,7 @@
 				</div>
 			  </div>
 			  <div class="card">
-			  	<img class = "yogaIcons" src="yoga_icons/yoga16.png" alt="yoga icon">
+			  	<img class = "yogaIcons" src="Assets/yoga_icons/yoga16.png" alt="yoga icon">
 			  	<div class="yogaName">
 					Namaste,
 				</div>
@@ -290,25 +316,31 @@
 		</section>
 
 
+
+
+
+		<!-- FIFTH SECTION: INSPIRATIONS -->
 		<section id="fifthSection">
 			<div id="inspirationHeading"class="sectionHeading">
 				inspirations
 			</div>
+
+			<!-- IMAGES AND INSTAGRAM HANDLE -->
 			<div class="row">
 				<div class="insta_group col-xs-12 col-lg-4">
-						<a href="https://www.instagram.com/yogajulz/" target="_blank"><img id="insta1" class="sectionImage hidden" src="photos/julz.png"></a>
+						<a href="https://www.instagram.com/yogajulz/" target="_blank"><img id="insta1" class="sectionImage hidden" src="Assets/photos/julz.png"></a>
 						<div class="sectionDescription">
 							<a href="https://www.instagram.com/yogajulz/" target="_blank">@yogajulz</a>
 						</div>
 				</div>
 				<div class="insta_group col-xs-12 col-lg-4">
-					<a href="https://www.instagram.com/carrot_bowl_bonnie/" target="_blank"><img id="insta2" class="sectionImage hidden" src="photos/bonnie.png"></a>
+					<a href="https://www.instagram.com/carrot_bowl_bonnie/" target="_blank"><img id="insta2" class="sectionImage hidden" src="Assets/photos/bonnie.png"></a>
 					<div class="sectionDescription">
 						<a href="https://www.instagram.com/carrot_bowl_bonnie/" target="_blank">@carrot_bowl_bonnie</a>
 					</div>
 				</div>
 				<div class="insta_group col-xs-12 col-lg-4">
-					<a href="https://www.instagram.com/asanavanessa/" target="_blank"><img id="insta3" class="sectionImage hidden" src="photos/vanessa.png"></a>
+					<a href="https://www.instagram.com/asanavanessa/" target="_blank"><img id="insta3" class="sectionImage hidden" src="Assets/photos/vanessa.png"></a>
 					<div class="sectionDescription">
 						<a href="https://www.instagram.com/asanavanessa/" target="_blank">@asanavanessa</a>
 					</div>
@@ -320,10 +352,14 @@
 		</section>
 
 
+
+
+
+		<!-- LAST SECTION: QUOTE -->
 		<div id="quoteOne">
 			<p> "Life is all about balance. You don't always have to be getting stuff done. Sometimes it's perfectly okay, and absolutely necessary, to shut down, kick back, and do nothing." </p>
 		</div>
 
-	<script src="function.js"></script>
+	<script src="Assets/function.js"></script>
 </body>
 </html>

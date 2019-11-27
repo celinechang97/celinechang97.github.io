@@ -16,7 +16,6 @@ a:hover{
 	cursor:pointer;
 }
 
-
 body{
 	font-family: 'Merriweather', serif;
 	background: #333;
@@ -28,7 +27,6 @@ body{
 .sectionDescription{
 	font-family: 'Muli', sans-serif;
 }
-
 
 #top_btn{
 	display: none;
@@ -52,8 +50,10 @@ body{
 
 
 
-/* OG PHONE SIZE (375px) */
 
+/* PHONE SIZE (375px) */
+
+/* FIRST SECTION: HOMEP PAGE */
 section#firstSection{
 	background-color: #806F78 !important;
 	width: 100%;
@@ -68,6 +68,16 @@ section#firstSection{
 
 #firstSection .sectionImage{
 	display: none;
+	float: right;
+	width: 50%;
+	height: 1000px;
+	overflow-y: hidden;
+	background: url('photos/coverphoto.jpeg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	transition: all 3s ease;
+	opacity: 0.8;
+
 }
 
 #firstSection .sectionImage#flower1{
@@ -80,7 +90,6 @@ section#firstSection{
 	height: auto;
 	overflow-y: hidden;
 	transition: all 3s ease;
-	/*transition-delay: 3s;*/
 }
 
 #firstSection .sectionImage#flower1.hidden{
@@ -91,7 +100,6 @@ section#firstSection{
 	font-size: 40px;
 	margin-bottom: 30px;
 	list-style: none;
-	/*transform: translateX(-50%) translateY(-50%);*/
 }
 
 .title li{
@@ -137,6 +145,7 @@ section#firstSection{
 }
 
 
+/* SECOND SECTION: TYPE OF YOGA */
 section#secondSection{
 	background-color: #CCA09D;
 	width: 100%;
@@ -166,7 +175,6 @@ section#secondSection{
 	line-height: 5rem;
 	left: 30px;
 	top: 50px;
-	transition: all .4s ease;
 }
 
 #secondSection .sectionSubHeading{
@@ -186,6 +194,7 @@ section#secondSection{
 }
 
 
+/* THIRD SECTION: BENEFITS OF YOGA */
 section#thirdSection{
 	background-color: #CCB19D;
 	width: 100%;
@@ -206,7 +215,6 @@ section#thirdSection{
 	line-height: 5rem;
 	left: 30px;
 	top: 30px;
-	transition: all .4s ease;
 }
 
 #thirdSection .sectionImage{
@@ -241,10 +249,11 @@ section#thirdSection{
 }
 
 
+/* FOURTH SECTION: POSTURES OF YOGA */
 section#fourthSection{
 	background-color: #F3E0DF;
 	width: 100%;
-	height: 1150px;
+	height: 1050px;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	position: relative;
@@ -256,7 +265,7 @@ section#fourthSection{
 	position: absolute;
 	left: -100px;
 	top: -50px;
-	opacity: 1;
+	opacity: 0.4;
 	overflow-y: hidden;
 }
 
@@ -266,7 +275,6 @@ section#fourthSection{
 	line-height: 5rem;
 	left: 30px;
 	top: 30px;
-	transition: all .4s ease;
 }
 
 .scrolling-wrapper {
@@ -277,16 +285,12 @@ section#fourthSection{
 }
 
 .card {
-   display: inline-block;  
-   background: none;
-   border-style: none;
-   margin: 4rem 8rem 0 3rem;
-   padding-bottom: 5rem;
-   text-align: center;
-}
-
-.yogaIcons{
-
+	display: inline-block;  
+	background: none;
+	border-style: none;
+	margin: 4rem 8rem 0 3rem;
+	padding-bottom: 5rem;
+	text-align: center;
 }
 
 .yogaName{
@@ -303,6 +307,7 @@ section#fourthSection{
 }
 
 
+/* FIFTH SECTION: INSPIRATIONS */
 section#fifthSection{
 	background-color: #B28D8B;
 	width: 100%;
@@ -314,6 +319,14 @@ section#fifthSection{
 
 #fifthSection .backgroundText{
 	display: none;
+	opacity: 0.2;
+	font-size: 250px;
+	transform: rotate(0deg);
+	line-height: 15rem;
+	left: 20px;
+	top: -90px;
+	overflow-y: hidden;
+	position: absolute;
 	transition: all .4s ease;
 }
 
@@ -323,7 +336,6 @@ section#fifthSection{
 	line-height: 5rem;
 	left: 30px;
 	top: 50px;
-	transition: all .4s ease;
 }
 
 #fifthSection .sectionDescription{
@@ -365,54 +377,37 @@ div#quoteOne{
 }
 
 
+
+
+
 /* MIN WIDTH 450 */
 @media only screen and (min-width: 450px){
 	section#fifthSection{
-	height: 1600px;
+		height: 1600px;
 	}
 }
 
 
 
 
+
 /* MIN WIDTH 500 */
 @media only screen and (min-width: 500px){
+	
+	/* FIRST SECTION: INSPIRATIONS */
 	section#firstSection{
-	background-color: #806F78;
-	width: 100%;
-	height: 800px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	}
-
-	#firstSection .sectionImage{
-		display: none;
+		width: 100%;
+		height: 800px;
 	}
 
 	#firstSection .sectionImage#flower1{
-		display: block;
-		position: absolute;
 		left:-100px;
 		top: -100px;
 		width: 100%;
 		height: auto;
-		overflow-y: hidden;
 	}
-
-	/*hr{
-		border-width: 2px;
-		background-color: #3E1B18;
-		margin-top: 80px;
-	}
-
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -400px;
-	}*/
 
 	.centerGroup{
-		position: absolute;
 		left: 90px;
 		top: 470px;
 		width: 80%;
@@ -429,27 +424,18 @@ div#quoteOne{
 	}
 
 
+	/* SECOND SECTION: TYPE OF YOGA */
 	section#secondSection{
-	background-color: #CCA09D;
-	width: 100%;
-	height: 1200px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 1200px;
 	}	
-
-	#secondSection .backgroundText{
-	display: none;
-	}
 
 	#secondSection .sectionImage{
 		width: 100%;
 		height: 350px;
-		overflow-y: hidden;
 	}
 
 	#secondSection .sectionHeading{
-		position: absolute;
 		font-size: 100px;
 		line-height: 8rem;
 		left: 30px;
@@ -457,8 +443,6 @@ div#quoteOne{
 	}
 
 	#secondSection .sectionSubHeading{
-		position: absolute;
-		color: #3E1B18;
 		font-size: 40px;
 		left: 30px;
 		top: 380px;
@@ -472,22 +456,13 @@ div#quoteOne{
 	}
 
 
+	/* THIRD SECTION: BENEFITS OF YOGA */
 	section#thirdSection{
-	background-color: #CCB19D;
-	width: 100%;
-	height: 1300px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	}
-
-
-	#thirdSection .backgroundText{
-		display: none;
+		width: 100%;
+		height: 1300px;
 	}
 
 	#thirdSection .sectionHeading{
-		position: absolute;
 		font-size: 100px;
 		line-height: 8rem;
 		left: 30px;
@@ -497,9 +472,6 @@ div#quoteOne{
 	#thirdSection .sectionImage{
 		width: 100%;
 		height: 1300px;
-		overflow-y: hidden;
-		filter: brightness(90%);
-
 	}
 
 	#thirdSection .sectionDescription{
@@ -507,10 +479,7 @@ div#quoteOne{
 		top: 350px;
 		width: 90%;
 		line-height: 1.5rem;
-		background-color: #333;
 		padding: 2rem 2rem;
-		text-align: center;
-		opacity: 0.8;
 	}
 
 	#thirdSection #rightDescription.sectionDescription{
@@ -519,86 +488,53 @@ div#quoteOne{
 	}
 
 
+	/* FOURTH SECTION: POSTURES OF YOGA */
 	section#fourthSection{
-	background-color: #F3E0DF;
-	width: 100%;
-	height: 1150px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	}
-
-	#fourthSection .backgroundText{
-		font-size: 200px;
-		position: absolute;
-		left: -100px;
-		top: -50px;
-		opacity: 0.2;
-		overflow-y: hidden;
+		width: 100%;
+		height: 1150px;
 	}
 
 	#fourthSection .sectionHeading{
-		position: absolute;
 		font-size: 100px;
 		line-height: 8rem;
 		left: 30px;
-		top: 20px;
+		top: 50px;
 	}
 
 	.scrolling-wrapper {
 		margin-top: 250px;
-	  	overflow-x: scroll;
-	  	overflow-y: hidden;
-	  	white-space: nowrap;
-	}
-
-	.card {
-	display: inline-block;  
-	background:none;
-	border-style: none;
-	margin: 4rem 8rem 0 3rem;
-	text-align: center;
-	}
-
-	.yogaIcons{
-
 	}
 
 	.yogaName{
-		color: #3E1B18;
 		font-size: 30px;
 		margin-top: 30px;
 	}
 
 	.yogaNameEng{
-		color: #3E1B18;
 		font-size: 20px;
 	}
 
+
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 1800px;
 	}
 
-
 	#fifthSection .sectionHeading{
-	position: absolute;
-	font-size: 90px;
-	line-height: 5rem;
-	left: 30px;
-	top: 50px;
+		font-size: 90px;
+		line-height: 5rem;
+		left: 30px;
+		top: 50px;
 	}
 
 
+	/* LAST SECTION: QUOTE */
 	div#quoteOne{
-	background-color: #3F3F3F;
-	text-align: center;
-	padding: 5rem 2rem;
-	color: #FFF9F1;
-	width: 100%;
-	height: 300px;
-	font-size: 20px;
+		padding: 5rem 2rem;
+		width: 100%;
+		height: 300px;
+		font-size: 20px;
 	}
-
 }
 
 
@@ -607,58 +543,44 @@ div#quoteOne{
 
 /* MIN WIDTH 600 */
 @media only screen and (min-width: 600px){
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 1900px;
 	}
 }
 
 
+
+
+
 /* MIN WIDTH 640 */
 @media only screen and (min-width: 640px){
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 2100px;
 	}
 }
 
 
+
+
+
 /* MIN WIDTH 700 */
 @media only screen and (min-width: 700px){
+	/* FIRST SECTION: INSPIRATIONS */
 	section#firstSection{
-	background-color: #806F78;
-	width: 100%;
-	height: 800px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	}
-
-	#firstSection .sectionImage{
-		display: none;
+		width: 100%;
+		height: 800px;
 	}
 
 	#firstSection .sectionImage#flower1{
-		display: block;
-		position: absolute;
 		left:-100px;
 		top: -100px;
 		width: 70%;
 		height: auto;
-		overflow-y: hidden;
 	}
-
-	/*hr{
-		border-width: 2px;
-		background-color: #3E1B18;
-		margin-top: 80px;
-	}
-
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -600px;
-	}*/
 
 	.centerGroup{
-		position: absolute;
 		left: 90px;
 		top: 470px;
 		width: 80%;
@@ -675,27 +597,18 @@ div#quoteOne{
 	}
 
 
+	/* SECOND SECTION: TYPE OF YOGA */
 	section#secondSection{
-	background-color: #CCA09D;
-	width: 100%;
-	height: 1050px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 1050px;
 	}	
-
-	#secondSection .backgroundText{
-	display: none;
-	}
 
 	#secondSection .sectionImage{
 		width: 100%;
 		height: 350px;
-		overflow-y: hidden;
 	}
 
 	#secondSection .sectionHeading{
-		position: absolute;
 		font-size: 130px;
 		line-height: 8rem;
 		left: 30px;
@@ -703,8 +616,6 @@ div#quoteOne{
 	}
 
 	#secondSection .sectionSubHeading{
-		position: absolute;
-		color: #3E1B18;
 		font-size: 40px;
 		left: 30px;
 		top: 380px;
@@ -718,22 +629,13 @@ div#quoteOne{
 	}
 
 
+	/* THIRD SECTION: BENEFITS OF YOGA */
 	section#thirdSection{
-	background-color: #CCB19D;
-	width: 100%;
-	height: 1100px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	}
-
-
-	#thirdSection .backgroundText{
-		display: none;
+		width: 100%;
+		height: 1100px;
 	}
 
 	#thirdSection .sectionHeading{
-		position: absolute;
 		font-size: 120px;
 		line-height: 8rem;
 		left: 30px;
@@ -743,8 +645,6 @@ div#quoteOne{
 	#thirdSection .sectionImage{
 		width: 100%;
 		height: 1300px;
-		overflow-y: hidden;
-		filter: brightness(90%);
 	}
 
 	#thirdSection .sectionDescription{
@@ -752,10 +652,8 @@ div#quoteOne{
 		top: 350px;
 		width: 90%;
 		line-height: 1.5rem;
-		background-color: #333;
 		padding: 2rem 2rem;
 		text-align: center;
-		opacity: 0.8;
 	}
 
 	#thirdSection #rightDescription.sectionDescription{
@@ -764,73 +662,43 @@ div#quoteOne{
 	}
 
 
+	/* FOURTH SECTION: POSTURES OF YOGA */
 	section#fourthSection{
-	background-color: #F3E0DF;
-	width: 100%;
-	height: 1150px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	}
-
-	#fourthSection .backgroundText{
-		font-size: 200px;
-		position: absolute;
-		left: -100px;
-		top: -50px;
-		opacity: 0.2;
-		overflow-y: hidden;
+		width: 100%;
+		height: 1150px;
 	}
 
 	#fourthSection .sectionHeading{
-		position: absolute;
 		font-size: 120px;
 		line-height: 8rem;
 		left: 30px;
 		top: 20px;
 	}
 
-	.scrolling-wrapper {
-		margin-top: 250px;
-	  	overflow-x: scroll;
-	  	overflow-y: hidden;
-	  	white-space: nowrap;
-	}
-
 	.card {
-	display: inline-block;  
-	background:none;
-	border-style: none;
-	margin: 4rem 5.5rem 0 3rem;
-	text-align: center;
-	}
-
-
-	.yogaIcons{
-
+		margin: 4rem 5.5rem 0 3rem;
 	}
 
 	.yogaName{
-		color: #3E1B18;
 		font-size: 30px;
 		margin-top: 30px;
 	}
 
 	.yogaNameEng{
-		color: #3E1B18;
 		font-size: 20px;
 	}
 
+
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 2200px;
 	}
 
 	#fifthSection .sectionHeading{
-	position: absolute;
-	font-size: 120px;
-	line-height: 5rem;
-	left: 30px;
-	top: 50px;
+		font-size: 120px;
+		line-height: 5rem;
+		left: 30px;
+		top: 50px;
 	}
 
 }
@@ -839,55 +707,26 @@ div#quoteOne{
 
 
 
-
-
 /* MIN WIDTH 768 */
 @media only screen and (min-width: 768px){
+	/* FIRST SECTION: INSPIRATIONS */
 	section#firstSection{
-	background-color: #806F78;
-	width: 100%;
-	height: 800px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 800px;
 	}
 
 	#firstSection .sectionImage{
-	display: block;
-	float: right;
-	width: 50%;
-	height: 1000px;
-	overflow-y: hidden;
-	background: url('photos/coverphoto.jpeg') no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
-	transition: all 3s ease;
-	opacity: 0.8;
+		display: block;
 	}
 
 	#firstSection .sectionImage#flower1{
-		display: block;
-		position: absolute;
 		left:-100px;
 		top: -100px;
 		width: 60%;
 		height: auto;
-		overflow-y: hidden;
 	}
-
-	/*hr{
-		border-width: 2px;
-		background-color: #3E1B18;
-		margin-top: 80px;
-	}
-
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -680px;
-	}*/
 
 	.centerGroup{
-		position: absolute;
 		left: 90px;
 		top: 470px;
 		width: 40%;
@@ -903,27 +742,19 @@ div#quoteOne{
 		font-size: 15px;
 	}
 
-	section#secondSection{
-	background-color: #CCA09D;
-	width: 100%;
-	height: 1000px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	}	
 
-	#secondSection .backgroundText{
-	display: none;
-	}
+	/* SECOND SECTION: TYPE OF YOGA */
+	section#secondSection{
+		width: 100%;
+		height: 1000px;
+	}	
 
 	#secondSection .sectionImage{
 		width: 100%;
 		height: 350px;
-		overflow-y: hidden;
-	}
+		}
 
 	#secondSection .sectionHeading{
-		position: absolute;
 		font-size: 150px;
 		line-height: 8rem;
 		left: 30px;
@@ -931,8 +762,6 @@ div#quoteOne{
 	}
 
 	#secondSection .sectionSubHeading{
-		position: absolute;
-		color: #3E1B18;
 		font-size: 40px;
 		left: 30px;
 		top: 380px;
@@ -946,24 +775,13 @@ div#quoteOne{
 	}
 
 
-
-
+	/* THIRD SECTION: BENEFITS OF YOGA */
 	section#thirdSection{
-	background-color: #CCB19D;
-	width: 100%;
-	height: 1100px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	}
-
-
-	#thirdSection .backgroundText{
-		display: none;
+		width: 100%;
+		height: 1100px;
 	}
 
 	#thirdSection .sectionHeading{
-		position: absolute;
 		font-size: 150px;
 		line-height: 8rem;
 		left: 30px;
@@ -982,10 +800,7 @@ div#quoteOne{
 		top: 350px;
 		width: 90%;
 		line-height: 1.5rem;
-		background-color: #333;
 		padding: 2rem 2rem;
-		text-align: center;
-		opacity: 0.8;
 	}
 
 	#thirdSection #rightDescription.sectionDescription{
@@ -993,12 +808,12 @@ div#quoteOne{
 		top: 700px;
 	}
 
+
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 2400px;
 	}
-
 }
-
 
 
 
@@ -1006,31 +821,16 @@ div#quoteOne{
 
 /* MIN WIDTH 850 */
 @media only screen and (min-width: 850px){
+	/* FIRST SECTION: INSPIRATIONS */
 	section#firstSection{
-	background-color: #806F78;
-	width: 100%;
-	height: 800px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 800px;
 	}
-
-	/*hr{
-		border-width: 2px;
-		background-color: #3E1B18;
-		margin-top: 80px;
-	}
-
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -700px;
-	}*/
 
 	.centerGroup{
-		position: absolute;
 		left: 90px;
 		top: 470px;
-		width: 38%;
+		width: 40%;
 	}
 
 	.title{
@@ -1043,6 +843,8 @@ div#quoteOne{
 		font-size: 15px;
 	}
 
+
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 2500px;
 	}
@@ -1054,14 +856,19 @@ div#quoteOne{
 
 /* MIN WIDTH 992 */
 @media only screen and (min-width: 910px){
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 2600px;
 	}
 }
 
 
+
+
+
 /* MIN WIDTH 960 */
 @media only screen and (min-width: 960px){
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 2800px;
 	}
@@ -1069,40 +876,24 @@ div#quoteOne{
 
 
 
+
+
 /* MIN WIDTH 992 */
 @media only screen and (min-width: 992px){
+	/* FIRST SECTION: INSPIRATIONS */
 	section#firstSection{
-	background-color: #806F78;
-	width: 100%;
-	height: 800px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 800px;
 	}
 
 	#firstSection .sectionImage#flower1{
-	display: block;
-	position: absolute;
-	left:-100px;
-	top: -100px;
-	width: 50%;
-	height: auto;
-	overflow-y: hidden;
+		left:-100px;
+		top: -100px;
+		width: 50%;
+		height: auto;
 	}
-
-	/*hr{
-		border-width: 2px;
-		background-color: #3E1B18;
-		margin-top: 80px;
-	}
-
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -850px;
-	}*/
 
 	.centerGroup{
-		position: absolute;
 		left: 90px;
 		top: 470px;
 		width: 40%;
@@ -1119,27 +910,18 @@ div#quoteOne{
 	}
 
 
+	/* SECOND SECTION: TYPE OF YOGA */
 	section#secondSection{
-	background-color: #CCA09D;
-	width: 100%;
-	height: 900px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 900px;
 	}	
-
-	#secondSection .backgroundText{
-	display: none;
-	}
 
 	#secondSection .sectionImage{
 		width: 100%;
 		height: 350px;
-		overflow-y: hidden;
 	}
 
 	#secondSection .sectionHeading{
-		position: absolute;
 		font-size: 190px;
 		line-height: 8rem;
 		left: 30px;
@@ -1147,8 +929,6 @@ div#quoteOne{
 	}
 
 	#secondSection .sectionSubHeading{
-		position: absolute;
-		color: #3E1B18;
 		font-size: 40px;
 		left: 30px;
 		top: 380px;
@@ -1162,22 +942,13 @@ div#quoteOne{
 	}
 
 
+	/* THIRD SECTION: BENEFITS OF YOGA */
 	section#thirdSection{
-	background-color: #CCB19D;
-	width: 100%;
-	height: 1100px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	}
-
-
-	#thirdSection .backgroundText{
-		display: none;
+		width: 100%;
+		height: 1100px;
 	}
 
 	#thirdSection .sectionHeading{
-		position: absolute;
 		font-size: 190px;
 		line-height: 8rem;
 		left: 30px;
@@ -1187,8 +958,6 @@ div#quoteOne{
 	#thirdSection .sectionImage{
 		width: 100%;
 		height: 1100px;
-		overflow-y: hidden;
-		filter: brightness(90%);
 	}
 
 	#thirdSection .sectionDescription{
@@ -1196,10 +965,7 @@ div#quoteOne{
 		top: 350px;
 		width: 90%;
 		line-height: 1.5rem;
-		background-color: #333;
 		padding: 2rem 2rem;
-		text-align: center;
-		opacity: 0.8;
 	}
 
 	#thirdSection #rightDescription.sectionDescription{
@@ -1208,8 +974,8 @@ div#quoteOne{
 	}
 
 
+	/* FOURTH SECTION: POSTURES OF YOGA */
 	#fourthSection .sectionHeading{
-		position: absolute;
 		font-size: 190px;
 		line-height: 8rem;
 		left: 30px;
@@ -1217,17 +983,13 @@ div#quoteOne{
 	}
 
 
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
-	background-color: #B28D8B;
-	width: 100%;
-	height: 750px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 750px;
 	}
 
 	#fifthSection .sectionHeading{
-		position: absolute;
 		font-size: 190px;
 		line-height: 5rem;
 		left: 30px;
@@ -1240,25 +1002,19 @@ div#quoteOne{
 	}
 
 	.insta_group{
-		text-align: center;
 		margin-top: 300px;
 		margin-bottom: -100px;
 	}
 
 
+	/* LAST SECTION: QUOTE */
 	div#quoteOne{
-	background-color: #3F3F3F;
-	text-align: center;
-	padding: 6rem 2rem;
-	color: #FFF9F1;
-	width: 100%;
-	height: 250px;
-	font-size: 20px;
+		padding: 6rem 2rem;
+		width: 100%;
+		height: 250px;
+		font-size: 20px;
 	}
-
 }
-
-
 
 
 
@@ -1266,28 +1022,13 @@ div#quoteOne{
 
 /* MIN WIDTH 1050 */
 @media only screen and (min-width: 1050px){
+	/* FIRST SECTION: INSPIRATIONS */
 	section#firstSection{
-	background-color: #806F78;
-	width: 100%;
-	height: 800px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 800px;
 	}
-
-	/*hr{
-		border-width: 2px;
-		background-color: #3E1B18;
-		margin-top: 80px;
-	}
-
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -900px;
-	}*/
 
 	.centerGroup{
-		position: absolute;
 		left: 90px;
 		top: 470px;
 		width: 35%;
@@ -1298,32 +1039,15 @@ div#quoteOne{
 
 
 
-
-
 /* MIN WIDTH 1200 */
 @media only screen and (min-width: 1200px){
+	/* FIRST SECTION: INSPIRATIONS */
 	section#firstSection{
-	background-color: #806F78;
-	width: 100%;
-	height: 800px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 800px;
 	}
-
-	/*hr{
-		border-width: 2px;
-		background-color: #3E1B18;
-		margin-top: 80px;
-	}
-
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -1050px;
-	}*/
 
 	.centerGroup{
-		position: absolute;
 		left: 90px;
 		top: 500px;
 		width: 60%;
@@ -1340,24 +1064,25 @@ div#quoteOne{
 	}
 
 
+	/* SECOND SECTION: TYPE OF YOGA */
 	section#secondSection{
-	background-color: #CCA09D;
-	width: 100%;
-	height: 950px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		background-color: #CCA09D;
+		width: 100%;
+		height: 950px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		position: relative;
 	}	
 
 	#secondSection .backgroundText{
-	display: block;
-	font-size: 250px;
-	transform: rotate(-90deg);
-	left: -600px;
-	top: 200px;
-	opacity: 0.2;
-	overflow-y: hidden;
-	position: absolute;
+		display: block;
+		font-size: 250px;
+		transform: rotate(-90deg);
+		left: -600px;
+		top: 200px;
+		opacity: 0.2;
+		overflow-y: hidden;
+		position: absolute;
 	}
 
 	#secondSection .sectionImage{
@@ -1391,16 +1116,15 @@ div#quoteOne{
 	}
 
 
-
+	/* THIRD SECTION: BENEFITS OF YOGA */
 	section#thirdSection{
-	background-color: #CCB19D;
-	width: 100%;
-	height: 1000px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		background-color: #CCB19D;
+		width: 100%;
+		height: 1000px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		position: relative;
 	}
-
 
 	#thirdSection .backgroundText{
 		display: block;
@@ -1444,8 +1168,8 @@ div#quoteOne{
 	}
 
 
+	/* FOURTH SECTION: POSTURES OF YOGA */
 	#fourthSection .sectionHeading{
-		position: absolute;
 		line-height: 8rem;
 		left: 30px;
 		top: 50px;
@@ -1454,26 +1178,18 @@ div#quoteOne{
 	#fourthSection .backgroundText{
 		display: block;
 		font-size: 300px;
-		position: absolute;
 		left: -100px;
 		top: -200px;
-		opacity: 0.2;
-		overflow-y: hidden;
 	}
 
 
-
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
-		background-color: #B28D8B;
 		width: 100%;
 		height: 1100px;
-		overflow-x: hidden;
-		overflow-y: hidden;
-		position: relative;
 	}
 
 	#fifthSection .sectionHeading{
-		position: absolute;
 		line-height: 8rem;
 		left: 30px;
 		top: 700px;
@@ -1482,26 +1198,8 @@ div#quoteOne{
 
 	#fifthSection .backgroundText{
 		display: block;
-		opacity: 0.2;
-		font-size: 250px;
-		transform: rotate(0deg);
-		line-height: 15rem;
-		left: 20px;
-		top: -90px;
-		overflow-y: hidden;
-		position: absolute;
 	}
 }
-
-
-
-
-/* MIN WIDTH 1300*/
-/*@media only screen and (min-width: 1300px){
-	#fifthSection .sectionImage{
-		width: 70%;
-	}
-}*/
 
 
 
@@ -1509,37 +1207,19 @@ div#quoteOne{
 
 /* MIN WIDTH 1600 */
 @media only screen and (min-width: 1600px){
+	/* FIRST SECTION: INSPIRATIONS */
 	section#firstSection{
-	background-color: #806F78;
-	width: 100%;
-	height: 1000px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 1000px;
 	}
 
 	#firstSection .sectionImage#flower1{
-		display: block;
-		position: absolute;
 		left:-250px;
 		top: -350px;
 		width: auto;
-		overflow-y: hidden;
 	}
-
-	/*hr{
-		border-width: 2px;
-		background-color: #3E1B18;
-		margin-top: 80px;
-	}
-
-	.roatedHR{
-		-webkit-transform:rotate(90deg);
-		margin-left: -1550px;
-	}*/
 
 	.centerGroup{
-		position: absolute;
 		left: 90px;
 		top: 550px;
 		width: 60%;
@@ -1556,35 +1236,24 @@ div#quoteOne{
 	}
 
 
+	/* SECOND SECTION: TYPE OF YOGA */
 	section#secondSection{
-	background-color: #CCA09D;
-	width: 100%;
-	height: 950px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 950px;
 	}	
 
 	#secondSection .backgroundText{
-	display: block;
-	font-size: 250px;
-	transform: rotate(-90deg);
-	left: -600px;
-	top: 200px;
-	opacity: 0.2;
-	overflow-y: hidden;
-	position: absolute;
+		font-size: 250px;
+		left: -600px;
+		top: 200px;
 	}
 
 	#secondSection .sectionImage{
-		float: right;
 		width: 50%;
 		height: 950px;
-		overflow-y: hidden;
 	}
 
 	#secondSection .sectionHeading{
-		position: absolute;
 		width: 50%;
 		font-size: 120px;
 		left: 30px;
@@ -1592,8 +1261,6 @@ div#quoteOne{
 	}
 
 	#secondSection .sectionSubHeading{
-		position: absolute;
-		color: #3E1B18;
 		font-size: 30px;
 		left: 90px;
 		top: 230px;
@@ -1607,26 +1274,16 @@ div#quoteOne{
 	}
 
 
-
+	/* THIRD SECTION: BENEFITS OF YOGA */
 	section#thirdSection{
-	background-color: #CCB19D;
-	width: 100%;
-	height: 1000px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
+		width: 100%;
+		height: 1000px;
 	}
 
-
 	#thirdSection .backgroundText{
-		display: block;
-		opacity: 0.5;
 		font-size: 250px;
-		transform: rotate(0deg);
 		left: -40px;
 		top: 700px;
-		overflow-y: hidden;
-		position: absolute;
 	}
 
 	#thirdSection .sectionHeading{
@@ -1636,22 +1293,11 @@ div#quoteOne{
 		line-height: 8rem;
 	}
 
-	#thirdSection .sectionImage{
-		width: 80%;
-		height: 1000px;
-		overflow-y: hidden;
-		filter: brightness(90%);
-	}
-
 	#thirdSection .sectionDescription{
 		left: 100px;
 		top: 100px;
 		width: 40%;
-		line-height: 1.5rem;
-		background-color: #333;
 		padding: 2rem 2rem;
-		text-align: center;
-		opacity: 0.8;
 	}
 
 	#thirdSection #rightDescription.sectionDescription{
@@ -1659,16 +1305,14 @@ div#quoteOne{
 		top: 500px;
 	}
 
-	div#quoteOne{
-	background-color: #3F3F3F;
-	text-align: center;
-	padding: 6rem 2rem;
-	color: #FFF9F1;
-	width: 100%;
-	height: 200px;
-	font-size: 20px;
-	}
 
+	/* LAST SECTION: QUOTE */
+	div#quoteOne{
+		padding: 6rem 2rem;
+		width: 100%;
+		height: 200px;
+		font-size: 20px;
+	}
 }
 
 
