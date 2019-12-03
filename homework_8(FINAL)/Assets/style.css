@@ -51,8 +51,8 @@ body{
 
 
 
-/* PHONE SIZE (375px) */
 
+/* PHONE SIZE (375px) */
 /* FIRST SECTION: HOMEP PAGE */
 section#firstSection{
 	background-color: #806F78 !important;
@@ -306,6 +306,49 @@ section#fourthSection{
 	font-family: 'Muli', sans-serif;
 }
 
+.scrollright{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	transform: translateY(-45px) translateX(150px) rotate(45deg);
+}
+
+.scrollright span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	animation: animate 2s linear infinite;
+	opacity: 0;
+}
+
+.scrollright span:nth-child(1){
+	transform: translate(10px, -10px);
+} 
+
+.scrollright span:nth-child(2){
+	transform: translate(25px, -25px);
+} 
+
+.scrollright span:nth-child(3){
+	transform: translate(40px, -40px);
+} 
+
+@keyframes animate{
+	0%{
+		left: -10px;
+		opacity: 0;
+	}
+	25%{
+		left: 0px;
+		opacity: 1;
+	}
+}
+
 
 /* FIFTH SECTION: INSPIRATIONS */
 section#fifthSection{
@@ -357,21 +400,24 @@ section#fifthSection{
 #insta1{
 	transition: all .5s ease;
 }
+
 #insta2{
 	transition: all .5s ease;
 }
+
 #insta3{
 	transition: all .5s ease;
 }
 
 
+/* LAST SECTION: QUOTE */
 div#quoteOne{
 	background-color: #3F3F3F;
 	text-align: center;
 	padding: 5rem 2rem;
 	color: #FFF9F1;
 	width: 100%;
-	height: 300px;
+	height: 350px;
 	font-style: italic;
 	font-family: 'Muli', sans-serif;
 }
@@ -382,8 +428,26 @@ div#quoteOne{
 
 /* MIN WIDTH 450 */
 @media only screen and (min-width: 450px){
+	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 1600px;
+	}
+
+	/* LAST SECTION: QUOTE */
+	div#quoteOne{
+		height: 300px;
+	}
+}
+
+
+
+
+
+/* MIN WIDTH 493 */
+@media only screen and (min-width: 493px){
+	/* FOURTH SECTION: POSTURES OF YOGA */
+	.scrollright{
+		transform: translateY(20px) translateX(-20px) rotate(45deg);
 	}
 }
 
@@ -393,7 +457,6 @@ div#quoteOne{
 
 /* MIN WIDTH 500 */
 @media only screen and (min-width: 500px){
-	
 	/* FIRST SECTION: INSPIRATIONS */
 	section#firstSection{
 		width: 100%;
@@ -514,6 +577,12 @@ div#quoteOne{
 		font-size: 20px;
 	}
 
+	.scrollright{
+		width: 50px;
+		height: 50px;
+		transform: translateY(-75px) translateX(200px) rotate(45deg);
+	}
+
 
 	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
@@ -532,7 +601,7 @@ div#quoteOne{
 	div#quoteOne{
 		padding: 5rem 2rem;
 		width: 100%;
-		height: 300px;
+		height: 350px;
 		font-size: 20px;
 	}
 }
@@ -558,6 +627,26 @@ div#quoteOne{
 	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 2100px;
+	}
+
+
+	/* LAST SECTION: QUOTE */
+	div#quoteOne{
+		height: 330px;
+	}
+}
+
+
+
+
+
+/* MIN WIDTH 691 */
+@media only screen and (min-width: 691px){
+	/* FOURTH SECTION: POSTURES OF YOGA */
+	.scrollright{
+		width: 50px;
+		height: 50px;
+		transform: translateY(20px) translateX(-30px) rotate(45deg);
 	}
 }
 
@@ -661,6 +750,12 @@ div#quoteOne{
 		top: 700px;
 	}
 
+	.scrollright{
+		width: 50px;
+		height: 50px;
+		transform: translateY(-70px) translateX(250px) rotate(45deg);
+	}
+
 
 	/* FOURTH SECTION: POSTURES OF YOGA */
 	section#fourthSection{
@@ -700,7 +795,6 @@ div#quoteOne{
 		left: 30px;
 		top: 50px;
 	}
-
 }
 
 
@@ -813,6 +907,26 @@ div#quoteOne{
 	section#fifthSection{
 		height: 2400px;
 	}
+
+
+	/* LAST SECTION: QUOTE */
+	div#quoteOne{
+		height: 300px;
+	}		
+}
+
+
+
+
+
+/* MIN WIDTH 824 */
+@media only screen and (min-width: 824px){
+	/* FOURTH SECTION: POSTURES OF YOGA */
+	.scrollright{
+		width: 50px;
+		height: 50px;
+		transform: translateY(40px) translateX(-30px) rotate(45deg);
+	}
 }
 
 
@@ -854,7 +968,7 @@ div#quoteOne{
 
 
 
-/* MIN WIDTH 992 */
+/* MIN WIDTH 910 */
 @media only screen and (min-width: 910px){
 	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
@@ -871,6 +985,12 @@ div#quoteOne{
 	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
 		height: 2800px;
+	}
+
+
+	/* LAST SECTION: QUOTE */
+	div#quoteOne{
+		height: 300px;
 	}
 }
 
@@ -982,6 +1102,12 @@ div#quoteOne{
 		top: 20px;
 	}
 
+	.scrollright{
+		width: 80px;
+		height: 80px;
+		transform: translateY(-70px) translateX(350px) rotate(45deg);
+	}
+
 
 	/* FIFTH SECTION: INSPIRATIONS */
 	section#fifthSection{
@@ -1011,7 +1137,7 @@ div#quoteOne{
 	div#quoteOne{
 		padding: 6rem 2rem;
 		width: 100%;
-		height: 250px;
+		height: 300px;
 		font-size: 20px;
 	}
 }
@@ -1205,6 +1331,47 @@ div#quoteOne{
 
 
 
+/* MIN WIDTH 1286 */
+@media only screen and (min-width: 1286px){
+	/* FOURTH SECTION: POSTURES OF YOGA */
+	.scrollright{
+		width: 50px;
+		height: 50px;
+		transform: translateY(60px) translateX(-30px) rotate(45deg);
+	}
+}
+
+
+
+
+
+/* MIN WIDTH 1500 */
+@media only screen and (min-width: 1500px){
+	/* FOURTH SECTION: POSTURES OF YOGA */
+	.scrollright{
+		width: 50px;
+		height: 50px;
+		transform: translateY(-60px) translateX(1250px) rotate(45deg);
+	}
+}
+
+
+
+
+
+/* MIN WIDTH 1550 */
+@media only screen and (min-width: 1550px){
+	/* LAST SECTION: QUOTE */
+	div#quoteOne{
+		height: 270px;
+		font-size: 18px;
+	}
+}
+
+
+
+
+
 /* MIN WIDTH 1600 */
 @media only screen and (min-width: 1600px){
 	/* FIRST SECTION: INSPIRATIONS */
@@ -1303,15 +1470,6 @@ div#quoteOne{
 	#thirdSection #rightDescription.sectionDescription{
 		left: 950px;
 		top: 500px;
-	}
-
-
-	/* LAST SECTION: QUOTE */
-	div#quoteOne{
-		padding: 6rem 2rem;
-		width: 100%;
-		height: 200px;
-		font-size: 20px;
 	}
 }
 
