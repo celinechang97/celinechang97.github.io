@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title> Celine Chang | UX Designer </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+
+            <nav class="navbar">
+                <a href="#" class><img id="logo" src="images/logo.png"></a>
+                <div id="icons-position">
+                    <a href="https://www.instagram.com/_celinagram/" target="_blank"><img  class="icons" src="images/instagram.png"></a>
+                    <a href="https://www.linkedin.com/in/celine-chang-844201165/" target="_blank"><img  class="icons" src="images/linkedin.png"></a>
+                    <a href="mailto:celinec@andrew.cmu.edu" target="_blank"><img  class="icons" src="images/email.png"></a>
+                </div>
+            </nav>
+
+            
+            <div id="fullPage">
+                <div class="section" id="home">
+                    <div class="slide" id="first-slide">
+                        <div class="titles">
+                            <div class="intro-title left-title"> 
+                                hi! I'm Celine
+                                <img id="celine-underline" src="images/celine-underline.png">
+                            </div>
+                            <div class="intro-title right-title"> 
+                                UX Designer <br> <span class="intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                                <img id="ux-underline" src="images/ux-underline.png">
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="slide">
+                        <h1> second test </h1>
+                    </div>
+                    
+                    <div class="slide">
+                        <h1> third test </h1>
+                    </div>
+                </div>
+
+                <div class="section" id="first-proj">
+                    <div class="learn-more">
+                        <div class="project-type">CASE STUDY</div>
+                        <div class="project-title">Venmo</div>
+                        <div class="project-description">Rethinking social dynamics in Venmo</div>
+                    </div>
+                </div>
+
+                <div class="section" id="second-proj">
+                    <div class="learn-more">
+                        <div class="project-type">USER RESEARCH</div>
+                        <div class="project-title">Selfie Kiosk</div>
+                        <div class="project-description">Rethinking social dynamics in Venmo</div>
+                    </div>
+                </div>
+
+                <div class="section" id="third-proj">
+                    <div class="learn-more">
+                        <div class="project-type">PERSUASIVE DESIGN</div>
+                        <div class="project-title">Bit by Bit</div>
+                        <div class="project-description">Rethinking social dynamics in Venmo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            new fullpage('#fullPage', {
+                autoScrolling: true,
+                navigation: true,
+                navigationTooltips: ['home', 'venmo', 'selfie kiosk', 'bit by bit'],
+//                controlArrows: false,
+//                slidesNavigation: true
+            })
+        </script>
+    </body>
+
+</html>
