@@ -24,6 +24,7 @@ body {
     z-index: 1;
     background-color: none;
     width: 100vw;
+    padding-top: 10px;
 }
 
 .navbar #logo {
@@ -33,13 +34,30 @@ body {
     float: left;
 }
 
+
+#nav a{
+    color: #ABABAB;
+    float: left;
+    margin: 20px 0 0 40px;
+    text-decoration: none;
+}
+
+#nav a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#nav a.active-html{
+    color: white !important;
+}
+
 .navbar #icons-position {
     margin-right: 40px;
 }
 
 .navbar .icons {
     width: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
     margin-top: 25px;
     transition: transform 0.2s;
     float: right;
@@ -127,15 +145,18 @@ body {
     line-height: 2rem;
     background-color: #393939;
     color: white;
+    text-align-last: left;
 }
 
 .titles {
-
+    position: relative;
 }
 
 .intro-title {
     font-size: 35px;
     font-weight: bold;
+    margin-left: 100px;
+    z-index: 1;
     position: relative;
 }
 
@@ -144,25 +165,17 @@ body {
 }
 
 .intro-description {
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Muli', sans-serif;
-    font-weight: lighter;
-}
-
-.left-title {
-/*    float: left;*/
+    font-weight: 100;
+    line-height: 3em;
 }
 
 #celine-underline {
     position: absolute;
-    left: 105px;
-    top: 27px;
-    z-index: -1;
-    width: 50%;
-}
-
-.right-title {
-/*    float:left;*/
+    width: 100px;
+    left: 203px;
+    top: 25px;
 }
 
 #ux-underline {
@@ -178,11 +191,38 @@ body {
 }
 
 #second-proj{
-    background: url('images/second-proj.png') no-repeat center center/cover;
+    background: url('images/third-proj.png') no-repeat center center/cover;
 }
 
-#third-proj{
-    background: url('images/third-proj.png') no-repeat center center/cover;
+#about {
+    background-color: #393939;
+    color: white;
+}
+
+.city-name {
+    font-size: 28px;
+    line-height: 1.7rem;
+    margin-top: 10px;
+}
+
+.city-desc {
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
+    line-height: 1rem;
+    width: 28%;
+    margin-top: 10px;
+    text-align-last: left;
+}
+
+.city-desc a {
+    color: white;
+}
+
+#resume-button {
+    border: solid 1px pink;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #fp-nav ul li a span {
