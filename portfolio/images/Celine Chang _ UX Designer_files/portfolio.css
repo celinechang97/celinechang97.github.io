@@ -85,7 +85,7 @@ body {
 .intro-title {
     font-size: 35px;
     font-weight: bold;
-    margin-left: 40px;
+    margin-left: 100px;
     z-index: 1;
     position: relative;
 }
@@ -98,11 +98,23 @@ body {
     font-size: 22px;
     font-family: 'Muli', sans-serif;
     font-weight: 100;
-    line-height: 1.2em;
-    width: 80%;
-    margin-top: 15px;
+    line-height: 3em;
 }
 
+#celine-underline {
+    position: absolute;
+    width: 100px;
+    left: 203px;
+    top: 25px;
+}
+
+#ux-underline {
+    position: absolute;
+    left: 150px;
+    top: 27px;
+    z-index: -1;
+    width: 40%;
+}
 
 
 
@@ -139,7 +151,7 @@ body {
     font-size: 50px;
     font-weight: bolder;
     color: white;
-
+    
 }
 
 .project-description {
@@ -182,21 +194,14 @@ body {
 
 #first-about {
     padding-top: 12%;
-    height: 100px;
-}
-
-#second-about {
-    margin-top: 1000px;
+    height: 100vh;
 }
 
 #about-first-p {
     line-height: 1.2rem;
     font-size: 20px;
     margin-top: 200px;
-    width: 100%;
-    position: absolute;
-    top: 350px;
-    left: 3px;
+    width: 30%;
 }
 
 #resume-button {
@@ -208,14 +213,13 @@ body {
     font-family: 'Muli', sans-serif;
     font-weight: lighter;
     font-size: 18px;
+    margin-top: 70px;
     padding-top: 12px;
     color: white;
     transition: 0.2s;
     font-family: 'Quicksand', sans-serif;
     float:left;
     margin-right: 15px;
-    margin-left: 20%;
-    margin-top: 50px;
 }
 
 #resume-button:hover {
@@ -232,14 +236,13 @@ body {
     font-family: 'Muli', sans-serif;
     font-weight: lighter;
     font-size: 18px;
+    margin-top: 70px;
     padding-top: 12px;
     color: white;
     transition: 0.2s;
     font-family: 'Quicksand', sans-serif;
     float:left;
     margin-right: 15px;
-    margin-left: 20%;
-    margin-top: 10px;
 }
 
 #email-button:hover {
@@ -248,21 +251,15 @@ body {
 }
 
 #picOfMe {
-    width: 100%;
-    position: absolute;
-    top: 20px;
-    left: 3px;
+    width: 20%;
 }
 
 .oneCityGroup {
     padding-left: 8%;
-    margin-top: 150px;
-    margin-left: 10px;
 }
 
 .cityRow {
     padding: 0px 100px 150px 0px;
-    margin-top: -120px;
 }
 
 .city-name {
@@ -276,7 +273,7 @@ body {
     font-family: 'Muli', sans-serif;
     font-weight: lighter;
     line-height: 1.4rem;
-    width: 100%;
+    width: 80%;
     margin-top: 50px;
     text-align-last: left;
     font-size: 16px;
@@ -307,112 +304,59 @@ body {
     background-color: #191919;
 }
 
-    
 
 
 
-@media only screen and (min-width: 970px) {
-    
-    .city-desc {
-        width: 90%;
-        margin-top: 50px;
+
+
+
+
+@media only screen and (min-width: 375px){
+	
+    #about-first-p {
+        margin-top: 200px;
+        width: 80%;
+        position: absolute;
+        top: 400px;
     }
     
-    
-    .oneCityGroup {
-        margin-left: 0px;
-    }
-    
-    #first-about {	
-        height: 100vh;	
-        padding-top: 10%;
-    }
-    
-    #second-about {
-        margin-top: 0px;
-    }
-    
-    #about-first-p {	
-        width: 100%;	
-        top: 3%;
-        left: 15%;
-        font-size: 16px;
-        text-align: center;
+    #first-about {
+        height: 100px;
     }
     
     #picOfMe {
         width: 100%;
-        
-        top: 10%;
-        left: 50%;
+        position: absolute;
+        top:0;
+        left: 3px;
     }
     
-    .cityRow {
-        margin-top: 0px;
+   
+    #second-about {
+        margin-top: 1200px;
     }
     
-    .oneCityGroup {
-        margin-top: 0px;
-        margin-left: 0px;
+    .city-desc {
+        width: 100%;
+    }
+
+@media only screen and (min-width: 450px){
+	#second-about {
+    margin-top: 470px;
     }
 }
 
 
-@media only screen and (min-width: 1100px) {
-    
-    #second-about {
-        margin-top: 3%;
+@media only screen and (min-width: 560px){
+	#second-about {
+    margin-top: 300px;
     }
-    
 }
 
-
-@media only screen and (min-width: 1300px) {
-    
-    #about-first-p {	
-        top: 5%;
-        font-size: 18px;
+@media only screen and (min-width: 800px){
+	#second-about {
+    margin-top: 200px;
     }
-    
-    #second-about {
-        margin-top: 5%;
-    }
-    
-}
-    
-
-@media only screen and (min-width: 1400px) {
-    
-     #about-first-p {	
-        top: 7%;
-        font-size: 20px;
-    }
-    
-    #second-about {
-        margin-top: 10%;
-    }
-    
-}
-
-@media only screen and (min-width: 1500px) {
-    
-    #about-first-p {	
-        top: 10%;
-        font-size: 20px;
-    }
-    
-    #second-about {
-        margin-top: 15%;
-    }
-    
-}
-
-@media only screen and (min-width: 1600px) {
-    
-    #second-about {
-        margin-top: 13%;
-    }
-    
 }
 
 
