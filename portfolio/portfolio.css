@@ -3,145 +3,75 @@
     padding: 0;
 }
 
-html {
-    
-}
-
 body {
     font-family: 'Quicksand', sans-serif;
     color: #393939;
     height: 100vh;
 }
 
-.container {
+
+
+
+
+/* NAV SECTION */
+
+.bigWrapper {
     width: 100%;
     height: 100%;
 }
 
-.navbar {
+.navigation-bar {
     position: fixed;
     top: 0;
     z-index: 1;
     background-color: none;
     width: 100vw;
-    padding-top: 10px;
+    padding: 20px 40px 0 40px;
 }
 
-.navbar #logo {
-    margin-left: 40px;
-    margin-top: 20px;
+.navigation-bar #logo {
     width: 40px;
+
+}
+
+.navigation-tabs {
+    color: #ABABAB;
+    margin-right: 15px;
+/*    background-color: blue;*/
+}
+
+.left {
     float: left;
 }
 
-
-#nav a{
-    color: #ABABAB;
-    float: left;
-    margin: 20px 0 0 40px;
+.navigation-tabs:hover{
+    cursor: pointer;
+    color: white;
     text-decoration: none;
 }
 
-#nav a:hover{
-    cursor: pointer;
-    color: white;
-}
-
-#nav a.active-html{
-    color: white !important;
-}
-
-.navbar #icons-position {
-    margin-right: 40px;
-}
-
-.navbar .icons {
-    width: 20px;
-    margin-right: 15px;
-    margin-top: 25px;
-    transition: transform 0.2s;
+.right {
     float: right;
 }
 
-.navbar .icons:hover {
+.navigation-bar .icons {
+    width: 20px;
+    margin-left: 15px;
+    transition: transform 0.2s;
+}
+
+.navigation-bar .icons:hover {
     transform: scale(1.2);
     transition: transform 0.2s;
 }
 
-/*
-.navbar {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: 60px;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    font-size: 14px;
-}
-
-.navbar ul li {
-    margin: 0 1rem;
-    padding: 1rem;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #393939;
-    
-}
-
-.navbar ul li a:hover {
-    color: #000;    
-}
-*/
-
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align-last: center;
-    width: 100%;
-    height: 100vh;
-    line-height: 3rem;
-}
-
-.learn-more {
-    transition: transform 0.2s;
-}
-.learn-more:hover {
-    cursor: pointer;  
-    transform: scale(1.05);
-    transition: transform 0.2s;
-}
-
-.project-type {
-    font-size: 15px;
-    color: white;
-}
-
-.project-title {
-    font-size: 50px;
-    font-weight: bolder;
-    color: white;
-    
-}
-
-.project-description {
-    font-size: 20px;
-    color: white;
-    font-family: 'Muli', sans-serif;
-    font-weight: lighter;
-}
 
 
-#home{
+
+
+/* HOME SECTION */
+
+#land{
     line-height: 2rem;
     background-color: #393939;
     color: white;
@@ -186,43 +116,175 @@ body {
     width: 40%;
 }
 
+
+
+
+
+/* FOR ALL THE PROJECT SECTIONS (STYLING) */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align-last: center;
+    width: 100%;
+    height: 100vh;
+    line-height: 3rem;
+}
+
+.learn-more {
+    transition: transform 0.2s;
+}
+.learn-more:hover {
+    cursor: pointer;  
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.project-type {
+    font-size: 15px;
+    color: white;
+}
+
+.project-title {
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    
+}
+
+.project-description {
+    font-size: 20px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
+}
+
+
+
+
+
+/* Venmo SECTION */
+
 #first-proj{
     background: url('images/first-proj.png') no-repeat center center/cover;
 }
+
+
+
+
+
+/* Bit by Bit SECTION */
 
 #second-proj{
     background: url('images/third-proj.png') no-repeat center center/cover;
 }
 
+
+
+
+
+/* ABOUT SECTION */
+
 #about {
     background-color: #393939;
+    color: white;   
+}
+
+#first-about {
+    padding-top: 12%;
+    height: 100vh;
+}
+
+#about-first-p {
+    line-height: 1.2rem;
+    font-size: 20px;
+    margin-top: 200px;
+    width: 30%;
+}
+
+#resume-button {
+    border: solid 1px pink;
+    border-radius: 0px;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: 70px;
+    padding-top: 12px;
     color: white;
+    transition: 0.2s;
+    font-family: 'Quicksand', sans-serif;
+    float:left;
+    margin-right: 15px;
+}
+
+#resume-button:hover {
+    transition: 0.2s;
+    border-radius: 0px 10px 0px 10px;
+}
+
+#email-button {
+    border: solid 1px #a8d2ff;
+    border-radius: 0px;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: 70px;
+    padding-top: 12px;
+    color: white;
+    transition: 0.2s;
+    font-family: 'Quicksand', sans-serif;
+    float:left;
+    margin-right: 15px;
+}
+
+#email-button:hover {
+    transition: 0.2s;
+    border-radius: 0px 10px 0px 10px;
+}
+
+#picOfMe {
+    width: 20%;
+}
+
+.oneCityGroup {
+    padding-left: 8%;
+}
+
+.cityRow {
+    padding: 0px 100px 150px 0px;
 }
 
 .city-name {
     font-size: 28px;
-    line-height: 1.7rem;
+    line-height: 2.2rem;
     margin-top: 10px;
+    text-align-last: left;
 }
 
 .city-desc {
     font-family: 'Muli', sans-serif;
     font-weight: lighter;
-    line-height: 1rem;
-    width: 28%;
-    margin-top: 10px;
+    line-height: 1.4rem;
+    width: 80%;
+    margin-top: 50px;
     text-align-last: left;
+    font-size: 16px;
 }
 
 .city-desc a {
     color: white;
 }
 
-#resume-button {
-    border: solid 1px pink;
-    width: 200px;
-    border-radius: 10px;
-    text-align: center;
+.marginAuto {
+    display: inline-block;
 }
 
 #fp-nav ul li a span {
@@ -235,4 +297,9 @@ body {
 
 .fp-slidesNav.fp-bottom {
 /*    */
+}
+
+.extraSpace {
+    height: 100px;
+    background-color: #191919;
 }

@@ -6,28 +6,35 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title> Celine Chang | UX Designer </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="portfolio.css">
         <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <div class="bigWrapper">
 
-            <nav class="navbar">
-                <a href="#home" class><img id="logo" src="images/logo.png"></a>
-                <div id="nav"> 
-                    <a href="#proj1"> work </a>
-                    <a href="#aboutme"> about </a>
+            <nav class="navigation-bar">
+                <div class="left"> 
+                    <a class="navigation-tabs" href="#home"><img id="logo" src="images/logo.png"></a>
+                    <a class="navigation-tabs" href="#proj1" id="workID"> work </a>
+                    <a class="navigation-tabs" href="#aboutme" id="aboutID"> about </a>
                 </div>
-                <div id="icons-position">
-                    <a href="images/resume2019.pdf" target="_blank"><img  class="icons" src="images/resume.png"></a>
-                    <a href="https://www.linkedin.com/in/celine-chang-844201165/" target="_blank"><img  class="icons" src="images/linkedin.png"></a>
+                <div class="right">
                     <a href="mailto:celinec@andrew.cmu.edu" target="_blank"><img  class="icons" src="images/email.png"></a>
+                    <a href="https://www.linkedin.com/in/celine-chang-844201165/" target="_blank"><img  class="icons" src="images/linkedin.png"></a>
+                    <a href="images/resume2019.pdf" target="_blank"><img  class="icons" src="images/resume.png"></a>
                 </div>
-            </nav>
+            </nav> 
 
             
+            
+            
+            
+            
+            
+            
             <div id="fullPage">
-                <div class="section" id="home">
+                <div class="section" id="land">
                     <div class="titles">
 <!--                        <img id="celine-underline" src="images/celine-underline.png">-->
                         <div class="intro-title"> 
@@ -39,15 +46,28 @@
                         </div>
                     </div> 
                 </div>
+                
+                
+                
+                
+                
+                
 
                 <div class="section" id="first-proj">
-                    <div class="learn-more">
-                        <div class="project-type">CASE STUDY</div>
-                        <div class="project-title">Venmo</div>
-                        <div class="project-description">Rethinking social dynamics in Venmo</div>
-                    </div>
+                    
+                        <div class="learn-more">
+                            <div class="project-type">CASE STUDY</div>
+                            <div class="project-title">Venmo</div>
+                            <div class="project-description">Rethinking social dynamics in Venmo</div>
+                        </div>
+                    
                 </div>
 
+                
+                
+                
+                
+                
                 <div class="section" id="second-proj">
                     <div class="learn-more">
                         <div class="project-type">PERSUASIVE DESIGN</div>
@@ -56,95 +76,162 @@
                     </div>
                 </div>
                 
-                <div class="section fp-scrollable" id="about">
-                    <div id="contentt">
-                        <div id="about-first-p">
-                            Each of the five cities I’ve once called home gifted me with the invaluable lesson of empathy through the people I met. With that experience, I aspire to be a designer that connects with people, leading to greater creativity and innovation through design. <br><br>Human to human first.
+                
+                
+                
+                
+                
+                
+                 <div class="section fp-scrollable" id="about">
+                    <div id="first-about">
+                        <div class="row justify-content-sm-center">
+                            <div id="about-first-p" class="col-sm-4">
+                                Each of the five cities I've once called home gifted me with the invaluable lesson of empathy through the people I met. With that experience, I aspire to be a designer that connects with people, leading to greater creativity and innovation through design. Always thinking human to human first.
+                                <br>
+                                <a href="images/resume2019.pdf" target="_blank"><div id="resume-button"><span class="marginAuto">Download My Resume</span></div></a>
+                                <a href="mailto:celinec@andrew.cmu.edu" target="_blank"><div id="email-button"><span class="marginAuto">Get in Touch!</span></div></a>
+                            </div>
+                            <img src="images/me.png" id="picOfMe" class="col-sm-3">
                         </div>
-                        <img src="images/me.png">
-                        <div id="resume-button">
-                            Download my resume
-                        </div>
-                        
-                        <div class="city-name">
-                            pittsburgh, <br> PA
-                        </div>
-                        <div class="city-desc">
-                            a place where I’m currently getting my master’s degree in Human-Computer Interaction at Carnegie Mellon University
-                            <br><br>
-                            a place I first experienced baseline happiness
-                            <br><br>
-                            a place with no distractions -- a  perfect place to get that master’s degree (;
-                        </div>
-                        
-                        <div class="city-name">
-                            evanston, <br> IL
-                        </div>
-                        <div class="city-desc">
-                            a place where I figured out what I wanted to do with my degree in Cognitive Science and a certificate in design (thank god for Professor Pam Daniels who introduced UX Design to me)
-                            <br><br>
-                            a place I’d fall asleep laughing and crying
-                            <br><br>
-                            a place where I started to ~ find myself ~ (sorry for being basic)
-                            <br><br>
-                            a place full of dance (Fusion Dance Co. *woot woot*) that helped me keep my sanity and be an influencer (check out <a href="https://www.instagram.com/_celinagram/" target="_blank">@_celinagram</a>!)
-                        </div>
-                        
-                        <div class="city-name">
-                            carpinteria, <br> CA
-                        </div>
-                        <div class="city-desc">
-                            a place where I gained my first, true independence by attending boarding school (which really meant doing my own laundry)
-                            <br><br>
-                            a place (the only place) that showed me that I can live in the woods without showering  for a full week....TWICE
-                            <br><br>
-                            a place I learned to call my friends family
-                            <br><br>
-                            a place I found my love for guacamole (not avocado though...)
-                        </div>
-                        
-                        <div class="city-name">
-                            singapore, <br> Singapore
-                        </div>
-                        <div class="city-desc">
-                            a place that helped me become trilingual (fluent in Konglish in addition to Korean and English ✌🏻)
-                            <br><br>
-                            a place I found I can be pretty atheltic (gymanstics, irish dance, horseback riding, swimming)
-                        </div>
-                        
-                        <div class="city-name">
-                            seoul, <br> Korea
-                        </div>
-                        <div class="city-desc">
-                            a place where my fam, my home, my root is since 1997
-                            <br><br>
-                            a place I can write so much about that this list will just be too long
-                        </div>
-                        
                     </div>
-                </div>                
+                     
+                     
+                     
+                     
+                     
+                     
+                    <div class="row cityRow">
+                         <div class="oneCityGroup col-sm-4">
+                            <div class="city-name">
+                                pittsburgh, <br> PA
+                            </div>
+                            <div class="city-desc">
+                                a place where I’m currently getting my master’s degree in Human-Computer Interaction at Carnegie Mellon University
+                                <br><br>
+                                a place I first experienced baseline happiness
+                                <br><br>
+                                a place with no distractions – a  perfect place to get that master’s degree (;
+                            </div>
+                        </div>
+                        
+                        <div class="oneCityGroup col-sm-4">
+                            <div class="city-name">
+                                evanston, <br> IL
+                            </div>
+                            <div class="city-desc">
+                                a place where I figured out what I wanted to do with my degree in Cognitive Science and a certificate in design (thank god for Professor Pam Daniels who introduced UX Design to me)
+                                <br><br>
+                                a place I’d fall asleep laughing and crying
+                                <br><br>
+                                a place where I started to ~ find myself ~ (sorry for being basic)
+                                <br><br>
+                                a place full of dance (Fusion Dance Co. *woot woot*) that helped me keep my sanity and be an influencer (check out <a href="https://www.instagram.com/_celinagram/" target="_blank">@_celinagram</a>!)
+                            </div>
+                        </div>
+                        
+                        <div class="oneCityGroup col-sm-4">
+                            <div class="city-name">
+                                carpinteria, <br> CA
+                            </div>
+                            <div class="city-desc">
+                                a place where I gained my first, true independence by attending boarding school (which really meant doing my own laundry)
+                                <br><br>
+                                a place (the only place) that showed me that I can live in the woods without showering  for a full week....TWICE
+                                <br><br>
+                                a place I learned to call my friends family
+                                <br><br>
+                                a place I found my love for guacamole (not avocado though...)
+                            </div>
+                        </div> 
+                     </div>
+                     
+                     
+                     
+                     
+                     
+                     <div class="row cityRow">
+                         <div class="oneCityGroup col-sm-4">
+                            <div class="city-name">
+                                singapore, <br> Singapore
+                            </div>
+                            <div class="city-desc">
+                                a place that helped me become trilingual (fluent in Konglish in addition to Korean and English ✌🏻)
+                                <br><br>
+                                a place I found I can be pretty atheltic (gymanstics, irish dance, horseback riding, swimming)
+                            </div>
+                        </div>
+                        
+                        <div class="oneCityGroup col-sm-4">
+                            <div class="city-name">
+                                seoul, <br> Korea
+                            </div>
+                            <div class="city-desc">
+                                a place where my fam, my home, my root is since 1997
+                                <br><br>
+                                a place I can write so much about that this list will just be too long
+                            </div>
+                        </div>
+                     </div>   
+                     <div class="extraSpace"></div>
+                </div>
             </div>
-            
         </div>
         
+        <script src="jquery-3.4.1.js"></script>    
+        <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="scrolloverflow.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="portfolio.js"></script>
+<!--        <script type="text/javascript" src="portfolio.js"></script>-->
         <script type="text/javascript">
+        
             new fullpage('#fullPage', {
                 autoScrolling: true,
                 navigation: true,
                 anchors: ["home","proj1", "proj2", "aboutme"],
                 navigationTooltips: ['home', 'venmo', 'bit by bit', 'about'],
                 controlArrows: false,
-//                slidesNavigation: true
+                slidesNavigation: true,
                 scrollOverflow: true       
-            })
-            
-            $('.fp-scrollable').slimScroll({
-                alwaysVisible: true,
-                allowPageScroll: true, 
             });
+//            
+//            $('.fp-scrollable').slimScroll({
+//                alwaysVisible: true,
+//                allowPageScroll: true, 
+//            });
+            
+//            $(document).ready(function() {
+//                $('#fullPage').fullpage();
+//            });
+            
+            
+            
+            
+            var top1 = $("#first-proj").offset().top;
+            var top2 = $("#about").offset().top;
+            
+            
+
+            $(document).scroll(function() {
+              var scrollPos = $(document).scrollTop();
+              if (scrollPos >= top1 && scrollPos < top2) {
+//                $('#workID').css('color', '#fff');
+                  alert("hello");
+              } else if (scrollPos >= top2) {
+//                $('#aboutID').css('color', '#fff');
+                  console.log("hello");
+              }
+            });
+            
+           
+            
+            
+//            $(window).scroll(function() {
+//                if (scrollPos > 100) {
+//                    console.log("hello");
+//                }
+//            });
+            
+
         </script>
     </body>
 
